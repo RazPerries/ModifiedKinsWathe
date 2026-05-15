@@ -173,7 +173,7 @@ public class KinsWatheRoles {
             true,
             false,
             Role.MoodType.REAL,
-            WatheRoles.CIVILIAN.getMaxSprintTime() * 3 / 2,
+            WatheRoles.CIVILIAN.getMaxSprintTime(),
             false
     ));
     //机器人
@@ -183,7 +183,7 @@ public class KinsWatheRoles {
             true,
             false,
             Role.MoodType.FAKE,
-            -1,
+            WatheRoles.CIVILIAN.getMaxSprintTime(),
             false
     ));
     //技术员

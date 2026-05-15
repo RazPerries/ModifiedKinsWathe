@@ -69,8 +69,6 @@
     "roles.hacker.HackerTargetHudMixin",
     "roles.licensed_villain.LicensedVillainInstinctMixin",
     "roles.licensed_villain.LicensedVillainMoodMixin",
-    "roles.physician.PhysicianDeathReasonMixin",
-    "roles.physician.PhysicianInstinctMixin",
     "roles.robot.RobotMoodMixin",
     "roles.technician.TechnicianInstinctMixin"
   ]

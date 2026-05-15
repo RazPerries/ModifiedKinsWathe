@@ -11,6 +11,8 @@ import net.minecraft.text.Text;
 import org.BsXinQin.kinswathe.KinsWatheItems;
 import org.BsXinQin.kinswathe.KinsWatheRoles;
 import org.BsXinQin.kinswathe.component.ConfigWorldComponent;
+import org.agmas.noellesroles.ModItems;
+import org.agmas.noellesroles.Noellesroles;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -33,7 +35,8 @@ public abstract class PhysicianShopMixin extends LimitedHandledScreen<PlayerScre
         GameWorldComponent gameWorld = GameWorldComponent.KEY.get(this.player.getWorld());
         if (gameWorld.isRole(this.player, KinsWatheRoles.PHYSICIAN)) {
             List<ShopEntry> entries = new ArrayList<>();
-            entries.add(new ShopEntry(KinsWatheItems.PILL.getDefaultStack(), ConfigWorldComponent.KEY.get(this.player.getWorld()).PhysicianPillPrice, ShopEntry.Type.POISON));
+            entries.add(new ShopEntry(ModItems.DEFENSE_VIAL.getDefaultStack(), 200, ShopEntry.Type.POISON));
+            entries.add(new ShopEntry(KinsWatheItems.MEDICAL_KIT.getDefaultStack(), 200, ShopEntry.Type.POISON));
             int apart = 36;
             int x = this.width / 2 - (entries.size()) * apart / 2 + 9;
             int shouldBeY = (this.height - 32) / 2;

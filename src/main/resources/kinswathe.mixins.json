@@ -19,7 +19,6 @@
     "modifiers.taskmaster.TaskmasterGiveCoinsMixin",
     "noellesroles.framing.DelusionVialApplyMixin",
     "noellesroles.framing.DoNotApplyFakePoisonMixin",
-    "noellesroles.roles.jester.JesterJestMixin",
     "roles.cook.CookFinishEatMixin",
     "roles.cook.CookShopMixin",
     "roles.dreamer.DreamerAddCountsMixin",
@@ -40,7 +39,6 @@
     "roles.licensed_villain.LicensedVillainNoPickupMixin",
     "roles.licensed_villain.LicensedVillainShopMixin",
     "roles.physician.PhysicianShopMixin",
-    "roles.physician.PhysicianTipPoisonMixin",
     "roles.robot.RobotNoPoisonMixin",
     "roles.technician.TechnicianShopMixin"
   ],
