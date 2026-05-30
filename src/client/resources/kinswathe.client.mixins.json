@@ -16,7 +16,6 @@
     "host.PlayerEffectLimitKyesMixin",
     "host.PlayerEffectLimitMouseMixin",
     "modifiers.violator.ViolatorKeyBindingMixin",
-    "roles.bellringer.BellringerHudMixin",
     "roles.bodymaker.BodymakerDoNotCloseMixin",
     "roles.bodymaker.BodymakerScreenMixin",
     "roles.bodymaker.BodymakerSuggestorMixin",

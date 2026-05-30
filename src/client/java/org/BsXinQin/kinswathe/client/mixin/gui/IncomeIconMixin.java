@@ -29,8 +29,7 @@ public abstract class IncomeIconMixin {
     private static void incomeIcon(@NotNull TextRenderer renderer, @NotNull ClientPlayerEntity player, @NotNull DrawContext context, float delta, @NotNull CallbackInfo ci) {
         if (MinecraftClient.getInstance().player == null) return;
         if (WatheClient.isPlayerAliveAndInSurvival()) {
-            if (GameWorldComponent.KEY.get(player.getWorld()).isRole(player, KinsWatheRoles.BELLRINGER) ||
-                GameWorldComponent.KEY.get(player.getWorld()).isRole(player, KinsWatheRoles.COOK) ||
+            if (GameWorldComponent.KEY.get(player.getWorld()).isRole(player, KinsWatheRoles.COOK) ||
                 GameWorldComponent.KEY.get(player.getWorld()).isRole(player, KinsWatheRoles.DETECTIVE) ||
                 GameWorldComponent.KEY.get(player.getWorld()).isRole(player, KinsWatheRoles.DREAMER) ||
                 GameWorldComponent.KEY.get(player.getWorld()).isRole(player, KinsWatheRoles.JUDGE) ||

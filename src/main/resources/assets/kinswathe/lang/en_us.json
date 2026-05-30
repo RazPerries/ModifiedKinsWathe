@@ -9,9 +9,6 @@
 
   "announcement.title.neutral": "Neutrals",
 
-  "announcement.role.kinswathe.bellringer": "Bellringer",
-  "announcement.goals.kinswathe.bellringer": "Check time, and modify time.",
-
   "announcement.role.kinswathe.bodymaker": "Bodymaker",
   "announcement.goals.kinswathe.bodymaker": "Fake bodies to confuse others.",
 
@@ -144,10 +141,6 @@
 
 
   "guidebook.namespace.kinswathe": "Mod: Kin's Wathe",
-
-  "guidebook.role.kinswathe:bellringer": "Bellringer",
-  "guidebook.role.title.kinswathe:bellringer": "Time Master",
-  "guidebook.role.description.kinswathe:bellringer": "The Bellringer holds the secrets of time aboard the train, able to know how much time remains.\n\nEvery so often, the Bellringer can ring the Time Bell, reducing the remaining time by 1 minute.\n\nThe passage of time will severely disrupt the killers' rhythm.",
 
   "guidebook.role.kinswathe:bodymaker": "Bodymaker",
   "guidebook.role.title.kinswathe:bodymaker": "Body Forger",

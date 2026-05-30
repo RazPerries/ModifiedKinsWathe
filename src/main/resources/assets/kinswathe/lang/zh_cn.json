@@ -9,9 +9,6 @@
 
   "announcement.title.neutral": "中立",
 
-  "announcement.role.kinswathe.bellringer": "敲钟人",
-  "announcement.goals.kinswathe.bellringer": "查看时间，并修改时间。",
-
   "announcement.role.kinswathe.bodymaker": "造尸怪",
   "announcement.goals.kinswathe.bodymaker": "伪造尸体，混淆视听",
 
@@ -144,10 +141,6 @@
 
 
   "guidebook.namespace.kinswathe": "模组: Kin's Wathe",
-
-  "guidebook.role.kinswathe:bellringer": "敲钟人",
-  "guidebook.role.title.kinswathe:bellringer": "时间掌控者",
-  "guidebook.role.description.kinswathe:bellringer": "敲钟人掌握着列车的时间奥秘，能够聆听到时光流逝的声音。\n\n敲钟人每时每刻都能知晓当前剩余的回合时间。每完成一项任务可获得 50 枚金币。\n\n每隔一段时间，敲钟人可以敲响时间之钟，使剩余时间减少 1 分钟。\n\n时间的流逝将严重打乱杀手们的节奏。",
 
   "guidebook.role.kinswathe:bodymaker": "造尸怪",
   "guidebook.role.title.kinswathe:bodymaker": "尸体捏造者",

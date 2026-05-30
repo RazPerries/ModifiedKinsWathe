@@ -31,7 +31,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
     public boolean EnableAutoPsychoInstinct = true;
     public boolean EnableNeutralAnnouncement = true;
     //关于KinsWathe修改
-    public int BellringerAbilityPrice = 200;
     public boolean BodymakerAbilityFakeRole = true;
     public int CleanerAbilityPrice = 200;
     public int CookPanPrice = 250;
@@ -68,7 +67,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         EnableAutoPsychoInstinct = KinsWatheConfig.HANDLER.instance().EnableAutoPsychoInstinct; tag.putBoolean("EnableAutoPsychoInstinct", this.EnableAutoPsychoInstinct);
         EnableNeutralAnnouncement = KinsWatheConfig.HANDLER.instance().EnableNeutralAnnouncement; tag.putBoolean("EnableNeutralAnnouncement", this.EnableNeutralAnnouncement);
         //关于KinsWathe修改
-        BellringerAbilityPrice = KinsWatheConfig.HANDLER.instance().BellringerAbilityPrice; tag.putInt("BellringerAbilityPrice", this.BellringerAbilityPrice);
         BodymakerAbilityFakeRole = KinsWatheConfig.HANDLER.instance().BodymakerAbilityFakeRole; tag.putBoolean("BodymakerAbilityFakeRole", this.BodymakerAbilityFakeRole);
         CleanerAbilityPrice = KinsWatheConfig.HANDLER.instance().CleanerAbilityPrice; tag.putInt("CleanerAbilityPrice", this.CleanerAbilityPrice);
         CookPanPrice = KinsWatheConfig.HANDLER.instance().CookPanPrice; tag.putInt("CookPanPrice", this.CookPanPrice);
@@ -105,7 +103,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         if (tag.contains("EnableAutoPsychoInstinct"))   this.EnableAutoPsychoInstinct = tag.getBoolean("EnableAutoPsychoInstinct");
         if (tag.contains("EnableNeutralAnnouncement"))   this.EnableNeutralAnnouncement = tag.getBoolean("EnableNeutralAnnouncement");
         //关于KinsWathe修改
-        if (tag.contains("BellringerAbilityPrice"))   this.BellringerAbilityPrice = tag.getInt("BellringerAbilityPrice");
         if (tag.contains("BodymakerAbilityFakeRole"))   this.BodymakerAbilityFakeRole = tag.getBoolean("BodymakerAbilityFakeRole");
         if (tag.contains("CleanerAbilityPrice"))   this.CleanerAbilityPrice = tag.getInt("CleanerAbilityPrice");
         if (tag.contains("CookPanPrice"))   this.CookPanPrice = tag.getInt("CookPanPrice");

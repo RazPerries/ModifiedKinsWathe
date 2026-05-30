@@ -17,7 +17,6 @@ import org.BsXinQin.kinswathe.component.AbilityPlayerComponent;
 import org.BsXinQin.kinswathe.packet.host.AbilityC2SPacket;
 import org.BsXinQin.kinswathe.packet.roles.BodymakerC2SPacket;
 import org.BsXinQin.kinswathe.packet.roles.JudgeC2SPacket;
-import org.BsXinQin.kinswathe.roles.bellringer.BellringerAbility;
 import org.BsXinQin.kinswathe.roles.bodymaker.BodymakerAbility;
 import org.BsXinQin.kinswathe.roles.cleaner.CleanerAbility;
 import org.BsXinQin.kinswathe.roles.detective.DetectiveAbility;
@@ -46,16 +45,6 @@ public class KinsWatheRoles {
     public static HashMap<String, Modifier> getModifiers() {return MODIFIERS;}
 
     /// 新增身份
-    //敲钟人
-    public static Role BELLRINGER = registerRole(new Role(
-            Identifier.of(KinsWathe.MOD_ID, "bellringer"),
-            0x66B2FF,
-            true,
-            false,
-            Role.MoodType.REAL,
-            WatheRoles.CIVILIAN.getMaxSprintTime(),
-            true
-    ));
     //造尸怪
     public static Role BODYMAKER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID,"bodymaker"),
@@ -276,7 +265,6 @@ public class KinsWatheRoles {
     public static List<Role> rolesHaveTaskIncome() {
         List<Role> roles = new ArrayList<>();
         roles.add(WatheRoles.KILLER);
-        roles.add(BELLRINGER);
         roles.add(BODYMAKER);
         roles.add(CLEANER);
         roles.add(COOK);
@@ -436,7 +424,6 @@ public class KinsWatheRoles {
     /// 注册身份技能
     public static void registerRolesAbility() {
         ServerPlayNetworking.registerGlobalReceiver(AbilityC2SPacket.ID, (payload, context) -> {
-            BellringerAbility.register(context.player());
             CleanerAbility.register(context.player());
             DetectiveAbility.register(context.player());
             HunterAbility.register(context.player());
