@@ -35,7 +35,6 @@ public abstract class PhysicianShopMixin extends LimitedHandledScreen<PlayerScre
         GameWorldComponent gameWorld = GameWorldComponent.KEY.get(this.player.getWorld());
         if (gameWorld.isRole(this.player, KinsWatheRoles.PHYSICIAN)) {
             List<ShopEntry> entries = new ArrayList<>();
-            entries.add(new ShopEntry(ModItems.DEFENSE_VIAL.getDefaultStack(), 200, ShopEntry.Type.POISON));
             entries.add(new ShopEntry(KinsWatheItems.MEDICAL_KIT.getDefaultStack(), 200, ShopEntry.Type.POISON));
             int apart = 36;
             int x = this.width / 2 - (entries.size()) * apart / 2 + 9;

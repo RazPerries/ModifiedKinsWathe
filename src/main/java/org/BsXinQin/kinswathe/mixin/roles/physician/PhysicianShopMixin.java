@@ -34,10 +34,6 @@ public abstract class PhysicianShopMixin {
         if (gameWorld.isRole(this.player, KinsWatheRoles.PHYSICIAN)) {
             switch (index) {
                 case 0:
-                    this.item = ModItems.DEFENSE_VIAL;
-                    this.price = 200;
-                    break;
-                case 1:
                     this.item = KinsWatheItems.MEDICAL_KIT;
                     this.price = 200;
                     break;
