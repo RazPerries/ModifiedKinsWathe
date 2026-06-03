@@ -47,14 +47,14 @@ public abstract class StaminaBarMixin {
     private void getStaminaBarRequire(@NotNull DrawContext context, float sprintTime, float maxSprintTime) {
         int screenWidth = MinecraftClient.getInstance().getWindow().getScaledWidth();
         int screenHeight = MinecraftClient.getInstance().getWindow().getScaledHeight();
-        int textureWidth = 174;
+        int textureWidth = 184;
         int textureHeight = 11;
-        int innerWidth = 166;
+        int innerWidth = 176;
         int innerHeight = 3;
         int horizontalBorder = (textureWidth - innerWidth) / 2;
         int verticalBorder = (textureHeight - innerHeight) / 2;
         int x = screenWidth / 2 - textureWidth / 2;
-        int y = screenHeight - 38;
+        int y = screenHeight - 36;
         float percent = Math.max(0, Math.min(1, sprintTime / maxSprintTime));
         context.drawTexture(STAMINA_BAR_TEXTURE, x, y, 0, 0, textureWidth, textureHeight, textureWidth, textureHeight);
         int fillWidth = (int) (innerWidth * percent);
