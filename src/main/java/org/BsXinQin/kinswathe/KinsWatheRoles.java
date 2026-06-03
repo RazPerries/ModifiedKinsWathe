@@ -126,7 +126,7 @@ public class KinsWatheRoles {
             0xC0C0C0,
             true,
             false,
-            Role.MoodType.FAKE,
+            Role.MoodType.REAL,
             WatheRoles.CIVILIAN.getMaxSprintTime(),
             false
     ));
