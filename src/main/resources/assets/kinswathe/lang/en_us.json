@@ -89,7 +89,6 @@
 
   "announcement.modifier.kinswathe.magnate": "Magnate",
   "announcement.modifier.kinswathe.taskmaster": "Taskmaster",
-  "announcement.modifier.kinswathe.violator": "Violator",
 
   "item.kinswathe.blowgun": "Blowgun",
   "item.kinswathe.blowgun.tooltip": "Point, right-click and shoot\nTarget that be shooted will be poisoned\n1 minute cooldown",
@@ -204,9 +203,5 @@
 
   "guidebook.role.kinswathe:taskmaster": "Taskmaster",
   "guidebook.role.title.kinswathe:taskmaster": "More Work, More Pay",
-  "guidebook.role.description.kinswathe:taskmaster": "Hard work pays off — the Taskmaster's income is tied to tasks.\n\nIf the Taskmaster is on the killer team, completing a task rewards 50 coins.\n\nIf on the non-killer team, completing a task grants an additional 25 coins on top of the regular reward.",
-
-  "guidebook.role.kinswathe:violator": "Violator",
-  "guidebook.role.title.kinswathe:violator": "Rule Breaker",
-  "guidebook.role.description.kinswathe:violator": "The Violator has broken the most fundamental rule on the train — jumping."
+  "guidebook.role.description.kinswathe:taskmaster": "Hard work pays off — the Taskmaster's income is tied to tasks.\n\nIf the Taskmaster is on the killer team, completing a task rewards 50 coins.\n\nIf on the non-killer team, completing a task grants an additional 25 coins on top of the regular reward."
 }

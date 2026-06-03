@@ -205,15 +205,6 @@ public class KinsWatheRoles {
             false,
             false
     ));
-    //违禁者
-    public static Modifier VIOLATOR = registerModifier(new Modifier(
-            Identifier.of(KinsWathe.MOD_ID, "violator"),
-            0x660000,
-            null,
-            null,
-            false,
-            false
-    ));
 
     /// 注册方法
     //注册身份
@@ -439,14 +430,6 @@ public class KinsWatheRoles {
 
     /// 限制词条自动启用配置
     public static void limitModifiersGenerateConfig() {
-        if (!KinsWatheConfig.HANDLER.instance().ViolatorEnabled) {
-            HarpyModLoaderConfig.HANDLER.load();
-            //限制违禁者自动启用配置
-            if (!HarpyModLoaderConfig.HANDLER.instance().disabledModifiers.contains(Identifier.of(KinsWathe.MOD_ID, "violator").toString())) {
-                HarpyModLoaderConfig.HANDLER.instance().disabledModifiers.add(Identifier.of(KinsWathe.MOD_ID, "violator").toString());
-            }
-            HarpyModLoaderConfig.HANDLER.save();
-        }
     }
 
     /// 初始化方法

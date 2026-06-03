@@ -89,7 +89,6 @@
 
   "announcement.modifier.kinswathe.magnate": "富豪",
   "announcement.modifier.kinswathe.taskmaster": "任务大师",
-  "announcement.modifier.kinswathe.violator": "违禁者",
 
   "item.kinswathe.blowgun": "吹矢",
   "item.kinswathe.blowgun.tooltip": "瞄准、右键点击并射击\n被射中的目标将会中毒\n冷却 1 分钟",
@@ -204,9 +203,5 @@
 
   "guidebook.role.kinswathe:taskmaster": "任务大师",
   "guidebook.role.title.kinswathe:taskmaster": "多劳多得",
-  "guidebook.role.description.kinswathe:taskmaster": "付出就有回报，任务大师的收入都变得与任务挂钩。\n\n如果任务大师是杀手阵营，则每完成一项任务可获得 50 枚金币。\n\n而如果是非杀手阵营，则每完成一项任务后，收入将额外增加 25 枚金币。",
-
-  "guidebook.role.kinswathe:violator": "违禁者",
-  "guidebook.role.title.kinswathe:violator": "规则破坏者",
-  "guidebook.role.description.kinswathe:violator": "违禁者打破了列车上最基础的规则——跳跃。"
+  "guidebook.role.description.kinswathe:taskmaster": "付出就有回报，任务大师的收入都变得与任务挂钩。\n\n如果任务大师是杀手阵营，则每完成一项任务可获得 50 枚金币。\n\n而如果是非杀手阵营，则每完成一项任务后，收入将额外增加 25 枚金币。"
 }

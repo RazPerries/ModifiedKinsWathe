@@ -51,9 +51,6 @@ public class KinsWatheConfig {
     @SerialEntry(comment = "Increase money when kill player.")
     public int IncreaseMoneyWhenKill = 100;
 
-    @SerialEntry(comment = "Whether Revolver drop after killer kills civilian.")
-    public boolean PreventKillerDropRevolver = false;
-
     /// 关于KinsWathe修改
 
     @SerialEntry(comment = "Bodymaker: modify cooldown of ability and whether to fake role of body.")
@@ -143,20 +140,4 @@ public class KinsWatheConfig {
     public int TechnicianCaptureDeviceStunTime = GameConstants.getInTicks(0,5) / 20;
     @SerialEntry
     public int TechnicianCaptureDeviceLifetimeSeconds = GameConstants.getInTicks(3,0) / 20;
-
-    @SerialEntry(comment = "Violator: whether to allow Violator to retain disable/enable state after a server restart.")
-    public boolean ViolatorEnabled = false;
-
-    /// 关于NoellesRoles修改
-    @SerialEntry(comment = "\n\n[Noelle's Roles] Modify (default settings are original settings of Noelle's Roles):")
-    public boolean EnableNoellesRolesModify = false;
-
-    @SerialEntry(comment = "Conductor: whether to enable instinct of seeing dropped items.")
-    public boolean ConductorInstinctModify = false;
-
-    @SerialEntry(comment = "Coroner: whether to enable instinct of seeing player bodies.")
-    public boolean CoronerInstinctModify = false;
-
-    @SerialEntry(comment = "Jester: whether to enable prevent attack killer in Psycho Mode.")
-    public boolean JesterAttackKillerModify = false;
 }

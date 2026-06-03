@@ -180,16 +180,6 @@ public class KinsWatheGameSettings {
                 playerPhysician.reset();
                 return false;
             }
-            //狂信死亡事件
-            if (FabricLoader.getInstance().isModLoaded("noellesroles")) {
-                if (KinsWatheConfig.HANDLER.instance().EnableNoellesRolesModify && KinsWatheConfig.HANDLER.instance().JesterAttackKillerModify) {
-                    if (killer != null) {
-                        if (gameWorld.getRole(player).canUseKiller() && gameWorld.isRole(killer, KinsWatheRoles.noellesrolesRoles("JESTER")) && PlayerPsychoComponent.KEY.get(killer).psychoTicks > 0) {
-                            return identifier != GameConstants.DeathReasons.BAT;
-                        }
-                    }
-                }
-            }
             return true;
         }));
         //攻击事件
