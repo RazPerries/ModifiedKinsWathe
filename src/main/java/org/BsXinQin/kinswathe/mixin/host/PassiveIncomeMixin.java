@@ -19,7 +19,6 @@ public abstract class PassiveIncomeMixin {
     public boolean setPassiveIncome(@NotNull GameWorldComponent gameWorld, @NotNull PlayerEntity player, @NotNull Operation<Boolean> original) {
         if (gameWorld.isRole(player, KinsWatheRoles.COOK) ||
             gameWorld.isRole(player, KinsWatheRoles.DREAMER) ||
-            gameWorld.isRole(player, KinsWatheRoles.JUDGE) ||
            (KinsWatheConfig.HANDLER.instance().HackerHasShop && gameWorld.isRole(player, KinsWatheRoles.HACKER))) return true;
         return original.call(gameWorld,player);
     }

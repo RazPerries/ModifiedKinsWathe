@@ -61,11 +61,6 @@ public class KinsWatheConfig {
     @SerialEntry(comment = "Cook: modify price of Pan.")
     public int CookPanPrice = 250;
 
-    @SerialEntry(comment = "Detective: modify price and cooldown of ability.")
-    public int DetectiveAbilityPrice = 200;
-    @SerialEntry
-    public int DetectiveAbilityCooldown = GameConstants.getInTicks(1,30) / 20;
-
     @SerialEntry(comment = "Dreamer: modify initial quantity of Dream Imprint.")
     public int DreamerInitialItemQuantity = 1;
 
@@ -97,13 +92,6 @@ public class KinsWatheConfig {
     public int HunterAbilityPrice = 125;
     @SerialEntry
     public int HunterAbilityCooldown = GameConstants.getInTicks(0,5) / 20;
-
-    @SerialEntry(comment = "Judge: modify price and cooldown of ability.")
-    public int JudgeAbilityPrice = 300;
-    @SerialEntry
-    public int JudgeAbilityGlowing = GameConstants.getInTicks(1,30) / 20;
-    @SerialEntry
-    public int JudgeAbilityCooldown = GameConstants.getInTicks(3,0) / 20;
 
     @SerialEntry(comment = "Kidnapper: modify price of Knockout Drug and get additional coins when kill dazed player.")
     public int KidnapperKnockoutDrugPrice = 75;

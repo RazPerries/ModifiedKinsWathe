@@ -15,12 +15,6 @@
   "announcement.role.kinswathe.cook": "Cook",
   "announcement.goals.kinswathe.cook": "See players that eat through walls!",
 
-  "announcement.role.kinswathe.detective": "Detective",
-  "announcement.goals.kinswathe.detective": "Investigate everything!",
-  "tip.kinswathe.detective.innocent": "%s is innocent",
-  "tip.kinswathe.detective.notinnocent": "%s is not innocent",
-  "hud.kinswathe.detective.target": "Use %s to investigate",
-
   "announcement.role.kinswathe.dreamer": "Dreamer",
   "announcement.goals.kinswathe.dreamer": "Make your world incredible!",
   "tip.kinswathe.dreamer.imprint": "%s has left a mark on you",
@@ -50,12 +44,6 @@
 
   "announcement.role.kinswathe.hunter": "Hunter",
   "announcement.goals.kinswathe.hunter": "Enjoy your prey to the fullest!",
-
-  "announcement.role.kinswathe.judge": "Judge",
-  "announcement.goals.kinswathe.judge": "Fair and just!",
-  "tip.kinswathe.judge.notification": "You are undergoing justice",
-  "tip.kinswathe.judge.ability_failed": "Target seems not to be present...",
-  "hud.kinswathe.judge.ready": "Ready to judge",
 
   "announcement.role.kinswathe.kidnapper": "Kidnapper",
   "announcement.goals.kinswathe.kidnapper": "Kidnap passenger to a concealed corner.",
@@ -146,10 +134,6 @@
   "guidebook.role.title.kinswathe:cook": "Frying Pan Master",
   "guidebook.role.description.kinswathe:cook": "The most popular person on the train — after all, who doesn't want a hot meal during the journey?\n\nPan isn't just for cooking; in critical moments, it can be used as weapon to stun enemies. It can even block bullets!\n\nWhenever a passenger eats food, the Cook can briefly see their location — after all, no one can escape the Cook's gaze.\n\nRemember, the Cook is just an ordinary person. Don't go chasing killers with Pan...",
 
-  "guidebook.role.kinswathe:detective": "Detective",
-  "guidebook.role.title.kinswathe:detective": "Truth Seeker",
-  "guidebook.role.description.kinswathe:detective": "The Detective's presence on this train is no coincidence — he received an anonymous letter hinting that a murder would occur during this journey.\n\nHe can use his Insight ability to determine if a target is innocent.\n\nBut he cannot directly identify the killer — his ability only tells him who is innocent. The rest, he must deduce himself...",
-
   "guidebook.role.kinswathe:dreamer": "Dreamer",
   "guidebook.role.title.kinswathe:dreamer": "Illusion Weaver",
   "guidebook.role.description.kinswathe:dreamer": "The Dreamer serves the killer organization, walking between reality and illusion.\n\nStarts with Dream Imprint, which can be used on a target, allowing them to withstand one extra attack.\n\nWhen a marked target takes damage, they are instantly teleported back to the Dreamer, and the Dreamer gains one count toward the number of non-killer players who have taken the Illusion Reagent.\n\nThe number of non-killer players required to take the Illusion Reagent is one-quarter of the total players. When enough non-killer players have taken it, the Dreamer's identity transforms into a killer.\n\nTo the Dreamer, reality is merely a dream that can be rewritten.",
@@ -165,10 +149,6 @@
   "guidebook.role.kinswathe:hunter": "Hunter",
   "guidebook.role.title.kinswathe:hunter": "Hunting Time",
   "guidebook.role.description.kinswathe:hunter": "A born chaser, the Hunter thoroughly enjoys the feeling of prey being pursued!\n\nWhen sprinting while holding a knife, the Hunter's movement speed is greatly increased. Hunting Knife will be added to the store — it has a longer holding time, but instantly cooldown when holding stops.\n\nThe Hunter can use his ability to instantly refresh the cooldown of all knives in his inventory, granting him terrifying chain-kill potential.\n\nRunning away only fuels his hunting desire!",
-
-  "guidebook.role.kinswathe:judge": "Judge",
-  "guidebook.role.title.kinswathe:judge": "Embodiment of Justice",
-  "guidebook.role.description.kinswathe:judge": "The Judge boarded this train purely for vacation, but his innate sense of justice prevents him from turning a blind eye to evil.\n\nThe Judge can use his Judgment ability to make a target emit light.\n\nSome say those marked by the Judge will eventually face trial, but others worry whether the Judge's verdicts are truly just...",
 
   "guidebook.role.kinswathe:kidnapper": "Kidnapper",
   "guidebook.role.title.kinswathe:kidnapper": "Dark Dealings",

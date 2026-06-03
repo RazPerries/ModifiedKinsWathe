@@ -16,13 +16,10 @@ import net.minecraft.util.Identifier;
 import org.BsXinQin.kinswathe.component.AbilityPlayerComponent;
 import org.BsXinQin.kinswathe.packet.host.AbilityC2SPacket;
 import org.BsXinQin.kinswathe.packet.roles.BodymakerC2SPacket;
-import org.BsXinQin.kinswathe.packet.roles.JudgeC2SPacket;
 import org.BsXinQin.kinswathe.roles.bodymaker.BodymakerAbility;
-import org.BsXinQin.kinswathe.roles.detective.DetectiveAbility;
 import org.BsXinQin.kinswathe.roles.dreamer.DreamerKillerComponent;
 import org.BsXinQin.kinswathe.roles.hacker.HackerPhoneComponent;
 import org.BsXinQin.kinswathe.roles.hunter.HunterAbility;
-import org.BsXinQin.kinswathe.roles.judge.JudgeAbility;
 import org.BsXinQin.kinswathe.roles.robot.RobotAbility;
 import org.agmas.harpymodloader.Harpymodloader;
 import org.agmas.harpymodloader.events.ModdedRoleAssigned;
@@ -57,16 +54,6 @@ public class KinsWatheRoles {
     public static Role COOK = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "cook"),
             0xCCFF99,
-            true,
-            false,
-            Role.MoodType.REAL,
-            WatheRoles.CIVILIAN.getMaxSprintTime(),
-            false
-    ));
-    //侦探
-    public static Role DETECTIVE = registerRole(new Role(
-            Identifier.of(KinsWathe.MOD_ID, "detective"),
-            0xFFFFCC,
             true,
             false,
             Role.MoodType.REAL,
@@ -112,16 +99,6 @@ public class KinsWatheRoles {
             Role.MoodType.FAKE,
             -1,
             true
-    ));
-    //大法官
-    public static Role JUDGE = registerRole(new Role(
-            Identifier.of(KinsWathe.MOD_ID, "judge"),
-            0xECECF7,
-            true,
-            false,
-            Role.MoodType.REAL,
-            WatheRoles.CIVILIAN.getMaxSprintTime(),
-            false
     ));
     //绑匪
     public static Role KIDNAPPER = registerRole(new Role(
@@ -246,10 +223,8 @@ public class KinsWatheRoles {
         roles.add(WatheRoles.KILLER);
         roles.add(BODYMAKER);
         roles.add(COOK);
-        roles.add(DETECTIVE);
         roles.add(DRUGMAKER);
         roles.add(HUNTER);
-        roles.add(JUDGE);
         roles.add(KIDNAPPER);
         roles.add(LICENSED_VILLAIN);
         roles.add(PHYSICIAN);
@@ -277,7 +252,6 @@ public class KinsWatheRoles {
         roles.add(DREAMER);
         roles.add(DRUGMAKER);
         roles.add(HUNTER);
-        roles.add(JUDGE);
         roles.add(KIDNAPPER);
         if (KinsWatheConfig.HANDLER.instance().HackerHasShop) roles.add(HACKER);
         if (FabricLoader.getInstance().isModLoaded("noellesroles")) {
@@ -397,15 +371,11 @@ public class KinsWatheRoles {
     /// 注册身份技能
     public static void registerRolesAbility() {
         ServerPlayNetworking.registerGlobalReceiver(AbilityC2SPacket.ID, (payload, context) -> {
-            DetectiveAbility.register(context.player());
             HunterAbility.register(context.player());
             RobotAbility.register(context.player());
         });
         ServerPlayNetworking.registerGlobalReceiver(BodymakerC2SPacket.ID, (payload, context) -> {
             BodymakerAbility.register(payload, context.player());
-        });
-        ServerPlayNetworking.registerGlobalReceiver(JudgeC2SPacket.ID, (payload, context) -> {
-            JudgeAbility.register(payload, context.player());
         });
     }
 

@@ -28,7 +28,6 @@ import org.BsXinQin.kinswathe.packet.items.BlowgunC2SPacket;
 import org.BsXinQin.kinswathe.packet.items.HuntingKnifeC2SPacket;
 import org.BsXinQin.kinswathe.packet.items.PanC2SPacket;
 import org.BsXinQin.kinswathe.packet.roles.BodymakerC2SPacket;
-import org.BsXinQin.kinswathe.packet.roles.JudgeC2SPacket;
 import org.BsXinQin.kinswathe.roles.cook.CookComponent;
 import org.BsXinQin.kinswathe.roles.dreamer.DreamerComponent;
 import org.BsXinQin.kinswathe.roles.dreamer.DreamerKillerComponent;
@@ -138,7 +137,6 @@ public class KinsWatheGameSettings {
     public static void registerPackets() {
         PayloadTypeRegistry.playC2S().register(AbilityC2SPacket.ID, AbilityC2SPacket.CODEC);
         PayloadTypeRegistry.playC2S().register(BodymakerC2SPacket.ID, BodymakerC2SPacket.CODEC);
-        PayloadTypeRegistry.playC2S().register(JudgeC2SPacket.ID, JudgeC2SPacket.CODEC);
         PayloadTypeRegistry.playC2S().register(BlowgunC2SPacket.ID, BlowgunC2SPacket.CODEC);
         PayloadTypeRegistry.playC2S().register(HuntingKnifeC2SPacket.ID, HuntingKnifeC2SPacket.CODEC);
         PayloadTypeRegistry.playC2S().register(PanC2SPacket.ID, PanC2SPacket.CODEC);

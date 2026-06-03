@@ -15,12 +15,6 @@
   "announcement.role.kinswathe.cook": "厨师",
   "announcement.goals.kinswathe.cook": "透过墙壁看见吃过东西的玩家！",
 
-  "announcement.role.kinswathe.detective": "侦探",
-  "announcement.goals.kinswathe.detective": "调查出一切！",
-  "tip.kinswathe.detective.innocent": "%s 是平民",
-  "tip.kinswathe.detective.notinnocent": "%s 不是平民",
-  "hud.kinswathe.detective.target": "按下 %s 键调查该目标身份",
-
   "announcement.role.kinswathe.dreamer": "梦者",
   "announcement.goals.kinswathe.dreamer": "让你的世界变得不可思议！",
   "tip.kinswathe.dreamer.imprint": "%s 与你烙下了印记",
@@ -50,12 +44,6 @@
 
   "announcement.role.kinswathe.hunter": "追猎者",
   "announcement.goals.kinswathe.hunter": "尽情享受你的猎物！",
-
-  "announcement.role.kinswathe.judge": "大法官",
-  "announcement.goals.kinswathe.judge": "公平公正!",
-  "tip.kinswathe.judge.notification": "你正在接受审判",
-  "tip.kinswathe.judge.ability_failed": "对方似乎不在场...",
-  "hud.kinswathe.judge.ready": "审判准备就绪",
 
   "announcement.role.kinswathe.kidnapper": "绑匪",
   "announcement.goals.kinswathe.kidnapper": "将乘客绑架到隐蔽的角落。",
@@ -146,10 +134,6 @@
   "guidebook.role.title.kinswathe:cook": "颠勺大师",
   "guidebook.role.description.kinswathe:cook": "列车上最受欢迎的人，毕竟谁不想在旅途中吃上一口热乎的呢？\n\n平底锅不仅能用来烹饪，危急时刻还能当做武器击晕敌人。甚至，它能够用来挡子弹！\n\n每当有乘客食用食物时，厨师能够短暂地看到他们的位置，毕竟没人能逃过厨师的注视。\n\n记住，厨师只是个普通人，别拿着平底锅去追杀手...",
 
-  "guidebook.role.kinswathe:detective": "侦探",
-  "guidebook.role.title.kinswathe:detective": "真相追寻者",
-  "guidebook.role.description.kinswathe:detective": "侦探乘坐这趟列车并非偶然，他收到了一封匿名信，信中暗示这趟旅程将发生命案。\n\n他可以使用洞察能力判断一名目标是否为无辜者。\n\n但是无法直接找出杀手——侦探的能力只能告诉他谁是无辜的，而剩下的，则需要他自己推理...",
-
   "guidebook.role.kinswathe:dreamer": "梦者",
   "guidebook.role.title.kinswathe:dreamer": "虚幻编织者",
   "guidebook.role.description.kinswathe:dreamer": "梦者是一位为杀手组织服务的角色，他游走于现实与虚幻之间。\n\n初始携带梦之印记，可以对目标使用，使其额外承受一次攻击。\n\n当被印记标记的目标受到伤害时，会立即传送回梦者身边，并为梦者添加一次服用幻觉试剂的非杀手玩家数量的计数。\n\n需要服用幻觉试剂的非杀手玩家数量为总玩家数的四分之一，当有足够的非杀手玩家服用幻觉试剂后，梦者的身份转变为杀手。\n\n对梦者而言，现实只是一场可以被改写的梦。",
@@ -165,10 +149,6 @@
   "guidebook.role.kinswathe:hunter": "追猎者",
   "guidebook.role.title.kinswathe:hunter": "猎杀时刻",
   "guidebook.role.description.kinswathe:hunter": "天生的追逐者，追猎者十分享受猎物被追的感觉！\n\n追猎者在冲刺时如果持刀蓄力，移动速度会大幅提升。商店中可以购买猎刀——拥有更持久的蓄力时间，但是停止蓄力时会立即冷却。\n\n追猎者可以使用能力瞬间刷新背包内所有刀的冷却时间，这令他有了恐怖的连杀能力。\n\n逃跑只会激起他更强烈的狩猎欲望！",
-
-  "guidebook.role.kinswathe:judge": "大法官",
-  "guidebook.role.title.kinswathe:judge": "正义的化身",
-  "guidebook.role.description.kinswathe:judge": "大法官登上这趟列车纯属休假，但骨子里的正义感使自己无法对罪恶视而不见。\n\n法官可以使用他的审判能力，使一名目标发出光芒。\n\n有人说被法官标记的人终将接受审判，但也有人担心法官的判决是否真的公正...",
 
   "guidebook.role.kinswathe:kidnapper": "绑匪",
   "guidebook.role.title.kinswathe:kidnapper": "黑暗交易",
