@@ -27,6 +27,7 @@ import org.agmas.harpymodloader.modifiers.HMLModifiers;
 import org.agmas.harpymodloader.modifiers.Modifier;
 import org.jetbrains.annotations.NotNull;
 
+import java.awt.*;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,7 +44,7 @@ public class KinsWatheRoles {
     //造尸怪
     public static Role BODYMAKER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID,"bodymaker"),
-            0x2148d1,
+            new Color(32, 77, 104).getRGB(),
             false,
             true,
             Role.MoodType.FAKE,
@@ -53,7 +54,7 @@ public class KinsWatheRoles {
     //厨师
     public static Role COOK = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "cook"),
-            0xCCFF99,
+            new Color(241, 228, 153).getRGB(),
             true,
             false,
             Role.MoodType.REAL,
@@ -63,7 +64,7 @@ public class KinsWatheRoles {
     //梦者
     public static Role DREAMER = registerNoellesRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "dreamer"),
-            0xE5CCFF,
+            new Color(52, 78, 128).getRGB(),
             false,
             false,
             Role.MoodType.FAKE,
@@ -73,7 +74,7 @@ public class KinsWatheRoles {
     //制毒师
     public static Role DRUGMAKER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "drugmaker"),
-            0x4C0099,
+            new Color(71, 8, 145).getRGB(),
             false,
             true,
             Role.MoodType.FAKE,
@@ -83,7 +84,7 @@ public class KinsWatheRoles {
     //黑客
     public static Role HACKER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "hacker"),
-            0x808080,
+            new Color(250, 220, 126).getRGB(),
             false,
             false,
             Role.MoodType.FAKE,
@@ -93,7 +94,7 @@ public class KinsWatheRoles {
     //追猎者
     public static Role HUNTER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "hunter"),
-            0x663300,
+            new Color(12, 80, 1).getRGB(),
             false,
             true,
             Role.MoodType.FAKE,
@@ -103,7 +104,7 @@ public class KinsWatheRoles {
     //绑匪
     public static Role KIDNAPPER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "kidnapper"),
-            0xCC0066,
+            new Color(88, 90, 35).getRGB(),
             false,
             true,
             Role.MoodType.FAKE,
@@ -113,7 +114,7 @@ public class KinsWatheRoles {
     //医师
     public static Role PHYSICIAN = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "physician"),
-            0xFFE5CC,
+            new Color(244, 151, 151).getRGB(),
             true,
             false,
             Role.MoodType.REAL,
@@ -123,7 +124,7 @@ public class KinsWatheRoles {
     //机器人
     public static Role ROBOT = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "robot"),
-            0xC0C0C0,
+            new Color(172, 243, 178).getRGB(),
             true,
             false,
             Role.MoodType.REAL,
@@ -133,7 +134,7 @@ public class KinsWatheRoles {
     //技术员
     public static Role TECHNICIAN = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "technician"),
-            0x003366,
+            new Color(126, 169, 250).getRGB(),
             true,
             false,
             Role.MoodType.REAL,
