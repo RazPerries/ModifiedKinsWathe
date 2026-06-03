@@ -52,12 +52,6 @@
   "tip.kinswathe.kidnapper.timeleft": "Remaining kidnap time: %ss",
   "tip.kinswathe.kidnapper.release": "Kidnap has ended",
 
-  "announcement.role.kinswathe.licensed_villain": "Licensed Villain",
-  "announcement.goals.kinswathe.licensed_villain": "You might still retain a shred of conscience...",
-  "announcement.win.kinswathe.licensed_villain": "Licensed Villain Win!",
-  "tip.kinswathe.licensed_villain.weapon": "Licensed Villain has obtained weapon!",
-  "game.win.kinswathe.licensed_villain": "The licensed villain ended everyone's life!",
-
   "announcement.role.kinswathe.physician": "Physician",
   "announcement.goals.kinswathe.physician": "See poisoned players through walls and treat them.",
   "tip.kinswathe.physician.medical_kit": "You feel much better now",
@@ -153,10 +147,6 @@
   "guidebook.role.kinswathe:kidnapper": "Kidnapper",
   "guidebook.role.title.kinswathe:kidnapper": "Dark Dealings",
   "guidebook.role.description.kinswathe:kidnapper": "The Kidnapper doesn't kill openly; he prefers to turn his prey into obedient puppets.\n\nKnockout Drug can be purchased at the shop. Using it renders a target unconscious, causing them to follow the Kidnapper. The Kidnapper also boards the train with Knockout Drug, just in case.\n\nIf the Kidnapper personally kill the dazed target, he will receive an additional reward.\n\nA target affected by Knockout Drug will have a black screen, unable to attack, use items, or use voice chat — they can only follow blindly until the effect wears off. However, if you can get far enough away during this time, the Kidnapper won't be able to catch you.\n\nNo one knows where the Kidnapper takes these passengers, and no one wants to know.",
-
-  "guidebook.role.kinswathe:licensed_villain": "Licensed Villain",
-  "guidebook.role.title.kinswathe:licensed_villain": "Officially Certified",
-  "guidebook.role.description.kinswathe:licensed_villain": "The Licensed Villain is a rare character holding an officially certified villain license. He only appears when there are enough players.\n\nThe Licensed Villain's win condition is unique — he must kill everyone. When all civilians or all killers are eliminated, the game does not end. Only he can end it all with his own hands.\n\nThe Licensed Villain has 15 seconds of sprint time, boards with Lockpick, and receives coins for completing tasks.\n\nRevolver can be purchased at the shop, and he suffers no misfire penalty when using it — after all, he's a professional.",
 
   "guidebook.role.kinswathe:physician": "Physician",
   "guidebook.role.title.kinswathe:physician": "Angel in White",

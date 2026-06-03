@@ -98,11 +98,6 @@ public class KinsWatheConfig {
     @SerialEntry
     public int KidnapperGetAdditionalCoins = 100;
 
-    @SerialEntry(comment = "Licensed Villain: modify generation player limit and price of Revolver.")
-    public int LicensedVillainPlayerLimit = 10;
-    @SerialEntry
-    public int LicensedVillainRevolverPrice = 300;
-
     @SerialEntry(comment = "Physician: modify price of Pill.")
     public int PhysicianPillPrice = 300;
 

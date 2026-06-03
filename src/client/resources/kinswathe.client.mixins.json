@@ -30,7 +30,6 @@
     "roles.kidnapper.KidnapperControlledMixin",
     "roles.kidnapper.KidnapperKeyControlledMixin",
     "roles.kidnapper.KidnapperShopMixin",
-    "roles.licensed_villain.LicensedVillainShopMixin",
     "roles.physician.PhysicianHandPosMixin",
     "roles.physician.PhysicianHandViewMixin",
     "roles.physician.PhysicianShopMixin",
@@ -59,8 +58,6 @@
     "roles.hacker.HackerInstinctMixin",
     "roles.hacker.HackerMoodMixin",
     "roles.hacker.HackerTargetHudMixin",
-    "roles.licensed_villain.LicensedVillainInstinctMixin",
-    "roles.licensed_villain.LicensedVillainMoodMixin",
     "roles.robot.RobotMoodMixin",
     "roles.technician.TechnicianInstinctMixin"
   ]

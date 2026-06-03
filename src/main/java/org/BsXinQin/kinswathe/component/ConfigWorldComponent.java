@@ -43,7 +43,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
     public int HackerRefreshPotionEffectPrice = 200;
     public int HunterAbilityPrice = 125;
     public int KidnapperKnockoutDrugPrice = 250;
-    public int LicensedVillainRevolverPrice = 300;
     public int PhysicianPillPrice = 300;
     public int TechnicianWrenchPrice = 100;
     public int TechnicianCaptureDevicePrice = 100;
@@ -72,7 +71,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         HackerRefreshPotionEffectPrice = KinsWatheConfig.HANDLER.instance().HackerRefreshPotionEffectPrice; tag.putInt("HackerRefreshPotionEffectPrice", this.HackerRefreshPotionEffectPrice);
         HunterAbilityPrice = KinsWatheConfig.HANDLER.instance().HunterAbilityPrice; tag.putInt("HunterAbilityPrice", this.HunterAbilityPrice);
         KidnapperKnockoutDrugPrice = KinsWatheConfig.HANDLER.instance().KidnapperKnockoutDrugPrice; tag.putInt("KidnapperKnockoutDrugPrice", this.KidnapperKnockoutDrugPrice);
-        LicensedVillainRevolverPrice = KinsWatheConfig.HANDLER.instance().LicensedVillainRevolverPrice; tag.putInt("LicensedVillainRevolverPrice", this.LicensedVillainRevolverPrice);
         PhysicianPillPrice = KinsWatheConfig.HANDLER.instance().PhysicianPillPrice; tag.putInt("PhysicianPillPrice", this.PhysicianPillPrice);
         TechnicianWrenchPrice = KinsWatheConfig.HANDLER.instance().TechnicianWrenchPrice; tag.putInt("TechnicianWrenchPrice", this.TechnicianWrenchPrice);
         TechnicianCaptureDevicePrice = KinsWatheConfig.HANDLER.instance().TechnicianCaptureDevicePrice; tag.putInt("TechnicianCaptureDevicePrice", this.TechnicianCaptureDevicePrice);
@@ -101,7 +99,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         if (tag.contains("HackerRefreshPotionEffectPrice"))   this.HackerRefreshPotionEffectPrice = tag.getInt("HackerRefreshPotionEffectPrice");
         if (tag.contains("HunterAbilityPrice"))   this.HunterAbilityPrice = tag.getInt("HunterAbilityPrice");
         if (tag.contains("KidnapperKnockoutDrugPrice"))   this.KidnapperKnockoutDrugPrice = tag.getInt("KidnapperKnockoutDrugPrice");
-        if (tag.contains("LicensedVillainRevolverPrice"))   this.LicensedVillainRevolverPrice = tag.getInt("LicensedVillainRevolverPrice");
         if (tag.contains("PhysicianPillPrice"))   this.PhysicianPillPrice = tag.getInt("PhysicianPillPrice");
         if (tag.contains("TechnicianWrenchPrice"))   this.TechnicianWrenchPrice = tag.getInt("TechnicianWrenchPrice");
         if (tag.contains("TechnicianCaptureDevicePrice"))   this.TechnicianCaptureDevicePrice = tag.getInt("TechnicianCaptureDevicePrice");

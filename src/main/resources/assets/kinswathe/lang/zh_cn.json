@@ -52,12 +52,6 @@
   "tip.kinswathe.kidnapper.timeleft": "剩余劫持时间：%s 秒",
   "tip.kinswathe.kidnapper.release": "劫持已结束",
 
-  "announcement.role.kinswathe.licensed_villain": "执照恶棍",
-  "announcement.goals.kinswathe.licensed_villain": "你或许还尚存有一丝良知...",
-  "announcement.win.kinswathe.licensed_villain": "执照恶棍胜利！",
-  "tip.kinswathe.licensed_villain.weapon": "执照恶棍已经获取了武器！",
-  "game.win.kinswathe.licensed_villain": "执照恶棍终结了所有人的生命！",
-
   "announcement.role.kinswathe.physician": "医师",
   "announcement.goals.kinswathe.physician": "透过墙壁看见中毒的玩家，然后治疗他们",
   "tip.kinswathe.physician.medical_kit": "你感觉好多了",
@@ -153,10 +147,6 @@
   "guidebook.role.kinswathe:kidnapper": "绑匪",
   "guidebook.role.title.kinswathe:kidnapper": "黑暗交易",
   "guidebook.role.description.kinswathe:kidnapper": "绑匪从不光明正大杀人，他更喜欢将猎物变成听话的傀儡。\n\n在商店中可以购买迷药，使用后可使目标陷入昏迷状态，并跟随绑匪移动。绑匪也会在登上列车前自带一个迷药，以备不时之需。\n\n如果绑匪亲自击杀昏迷中的目标将获得一笔额外的报酬。\n\n被迷药作用的目标将会黑屏，无法攻击或使用物品，也无法使用语音聊天——他们只能盲目地跟随，直到解除药效。不过，要是你有办法在这期间脱离足够远的距离，绑匪就拿你没办法了。\n\n没人知道绑匪把这些乘客带去了哪里，也没人想知道。",
-
-  "guidebook.role.kinswathe:licensed_villain": "执照恶棍",
-  "guidebook.role.title.kinswathe:licensed_villain": "持证上岗",
-  "guidebook.role.description.kinswathe:licensed_villain": "执照恶棍是持有官方认证的恶人执照的稀有角色，他仅会在人数足够时出现。\n\n执照恶棍的胜利条件与众不同——他必须杀死所有人。当所有平民阵营或所有杀手阵营死亡时，游戏并不会结束，只有他能亲手终结一切。\n\n执照恶棍拥有 15 秒的冲刺时间，上车的时候会自带一个开锁器，且每完成一项任务可获得金币。\n\n在商店中可以购买左轮手枪，并且他使用左轮手枪时不会有任何错误开火惩罚——毕竟是专业的。",
 
   "guidebook.role.kinswathe:physician": "医师",
   "guidebook.role.title.kinswathe:physician": "白衣天使",

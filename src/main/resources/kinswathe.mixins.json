@@ -32,11 +32,6 @@
     "roles.hunter.HunterSprintMixin",
     "roles.kidnapper.KidnapperMoneyIncreaseMixin",
     "roles.kidnapper.KidnapperShopMixin",
-    "roles.licensed_villain.LicensedVillainGiveCoinsMixin",
-    "roles.licensed_villain.LicensedVillainKeepGameMixin",
-    "roles.licensed_villain.LicensedVillainNoBackfireMixin",
-    "roles.licensed_villain.LicensedVillainNoPickupMixin",
-    "roles.licensed_villain.LicensedVillainShopMixin",
     "roles.physician.PhysicianShopMixin",
     "roles.robot.RobotNoPoisonMixin",
     "roles.technician.TechnicianShopMixin"

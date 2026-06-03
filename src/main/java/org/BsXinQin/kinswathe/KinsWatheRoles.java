@@ -110,16 +110,6 @@ public class KinsWatheRoles {
             -1,
             true
     ));
-    //执照恶棍
-    public static Role LICENSED_VILLAIN = registerRole(new Role(
-            Identifier.of(KinsWathe.MOD_ID, "licensed_villain"),
-            0x404040,
-            false,
-            false,
-            Role.MoodType.FAKE,
-            WatheRoles.CIVILIAN.getMaxSprintTime() * 3 / 2,
-            false
-    ));
     //医师
     public static Role PHYSICIAN = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "physician"),
@@ -226,7 +216,6 @@ public class KinsWatheRoles {
         roles.add(DRUGMAKER);
         roles.add(HUNTER);
         roles.add(KIDNAPPER);
-        roles.add(LICENSED_VILLAIN);
         roles.add(PHYSICIAN);
         roles.add(TECHNICIAN);
         if (KinsWatheConfig.HANDLER.instance().HackerHasShop) roles.add(HACKER);
@@ -277,7 +266,6 @@ public class KinsWatheRoles {
     }
     //新增中立身份
     public static void addNeutralRoles() {
-        NEUTRAL_ROLES.add(LICENSED_VILLAIN);
     }
     //新增杀手方中立身份
     public static void addKillerNeutralRoles() {
@@ -300,11 +288,6 @@ public class KinsWatheRoles {
             if (server.getPlayerManager().getCurrentPlayerCount() >= KinsWatheConfig.HANDLER.instance().HackerPlayerLimit) {
                 Harpymodloader.setRoleMaximum(HACKER,1);} else {
                 Harpymodloader.setRoleMaximum(HACKER,0);
-            }
-            //限制执照恶棍生成人数
-            if (server.getPlayerManager().getCurrentPlayerCount() >= KinsWatheConfig.HANDLER.instance().LicensedVillainPlayerLimit) {
-                Harpymodloader.setRoleMaximum(LICENSED_VILLAIN,1);} else {
-                Harpymodloader.setRoleMaximum(LICENSED_VILLAIN,0);
             }
         }));
     }
@@ -356,10 +339,6 @@ public class KinsWatheRoles {
             //绑匪初始物品
             if (role.equals(KIDNAPPER)) {
                 player.giveItemStack(KinsWatheItems.KNOCKOUT_DRUG.getDefaultStack());
-            }
-            //执照恶棍初始物品
-            if (role.equals(LICENSED_VILLAIN)) {
-                player.giveItemStack(WatheItems.LOCKPICK.getDefaultStack());
             }
             //医师初始物品
             if (role.equals(PHYSICIAN)) {
