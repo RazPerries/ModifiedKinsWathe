@@ -24,8 +24,6 @@
 
   "announcement.role.kinswathe.drugmaker": "Drugmaker",
   "announcement.goals.kinswathe.drugmaker": "Conquer everyone with poison!",
-  "tip.kinswathe.drugmaker.poison_failed": "It seems to be immune to poisoning...",
-  "tip.kinswathe.drugmaker.poisoned": "Someone was poisoned",
 
   "announcement.role.kinswathe.hacker": "Hacker",
   "announcement.goals.kinswathe.hacker": "Attempting to hack into the entire train...",

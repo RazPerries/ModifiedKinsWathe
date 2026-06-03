@@ -17,12 +17,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Random;
 
 public class BlowgunItem extends Item {
 
     public BlowgunItem(@NotNull Settings settings) {super(settings);}
-    private static final Random random = new Random();
 
     @Override
     public @NotNull TypedActionResult<@NotNull ItemStack> use(@NotNull World world, @NotNull PlayerEntity player, @NotNull Hand hand) {
@@ -40,6 +38,7 @@ public class BlowgunItem extends Item {
                 } catch (ClassNotFoundException | InvocationTargetException | IllegalAccessException | NoSuchMethodException ignored) {}
             }
         }
+        player.getStackInHand(hand).decrementUnlessCreative(1, player);
         return TypedActionResult.success(stack, false);
     }
 }

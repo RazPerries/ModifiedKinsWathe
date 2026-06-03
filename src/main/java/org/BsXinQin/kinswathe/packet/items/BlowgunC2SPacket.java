@@ -1,6 +1,5 @@
 package org.BsXinQin.kinswathe.packet.items;
 
-import dev.doctor4t.wathe.cca.GameWorldComponent;
 import dev.doctor4t.wathe.cca.PlayerPoisonComponent;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.entity.player.PlayerEntity;
@@ -9,10 +8,8 @@ import net.minecraft.network.codec.PacketCodec;
 import net.minecraft.network.codec.PacketCodecs;
 import net.minecraft.network.packet.CustomPayload;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.BsXinQin.kinswathe.KinsWathe;
-import org.BsXinQin.kinswathe.KinsWatheRoles;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
@@ -33,12 +30,7 @@ public record BlowgunC2SPacket(int target) implements CustomPayload {
             ServerPlayerEntity player = context.player();
             if (!(player.getServerWorld().getEntityById(payload.target()) instanceof @NotNull PlayerEntity target)) return;
             if (target.distanceTo(player) > 15.0F) return;
-            GameWorldComponent gameWorld = GameWorldComponent.KEY.get(player.getWorld());
             PlayerPoisonComponent targetPoison = PlayerPoisonComponent.KEY.get(target);
-            if (gameWorld.isRole(target, KinsWatheRoles.ROBOT)) {
-                player.sendMessage(Text.translatable("tip.kinswathe.drugmaker.poison_failed").withColor(Color.RED.getRGB()), true);
-                return;
-            }
             if (targetPoison.poisonTicks > 0) {
                 int reduction = random.nextInt(200) + 100;
                 int poisonTicks = Math.max(0, targetPoison.poisonTicks - reduction);

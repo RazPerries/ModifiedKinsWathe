@@ -22,7 +22,6 @@
     "roles.cook.CookShopMixin",
     "roles.dreamer.DreamerAddCountsMixin",
     "roles.dreamer.DreamerShopMixin",
-    "roles.drugmaker.DrugmakerGiveCoinsMixin",
     "roles.drugmaker.DrugmakerShopMixin",
     "roles.hacker.HackerAvoidMimicMixin",
     "roles.hacker.HackerGiveCoinsMixin",
