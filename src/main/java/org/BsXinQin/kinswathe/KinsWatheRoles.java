@@ -64,7 +64,7 @@ public class KinsWatheRoles {
     //梦者
     public static Role DREAMER = registerNoellesRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "dreamer"),
-            new Color(52, 78, 128).getRGB(),
+            new Color(52, 56, 128).getRGB(),
             false,
             false,
             Role.MoodType.FAKE,
@@ -84,7 +84,7 @@ public class KinsWatheRoles {
     //黑客
     public static Role HACKER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "hacker"),
-            new Color(250, 220, 126).getRGB(),
+            new Color(66, 113, 113).getRGB(),
             false,
             false,
             Role.MoodType.FAKE,
