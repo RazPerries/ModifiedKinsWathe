@@ -58,13 +58,6 @@ public class KinsWatheConfig {
     @SerialEntry
     public boolean BodymakerAbilityFakeRole = true;
 
-    @SerialEntry(comment = "Cleaner: modify get coins when dissolve a body, price and cooldown of ability.")
-    public int CleanerGetCoins = 50;
-
-    public int CleanerAbilityPrice = 200;
-    @SerialEntry
-    public int CleanerAbilityCooldown = GameConstants.getInTicks(2,30) / 20;
-
     @SerialEntry(comment = "Cook: modify price of Pan.")
     public int CookPanPrice = 250;
 

@@ -32,7 +32,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
     public boolean EnableNeutralAnnouncement = true;
     //关于KinsWathe修改
     public boolean BodymakerAbilityFakeRole = true;
-    public int CleanerAbilityPrice = 200;
     public int CookPanPrice = 250;
     public int DetectiveAbilityPrice = 200;
     public int DrugmakerGetCoins = 50;
@@ -68,7 +67,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         EnableNeutralAnnouncement = KinsWatheConfig.HANDLER.instance().EnableNeutralAnnouncement; tag.putBoolean("EnableNeutralAnnouncement", this.EnableNeutralAnnouncement);
         //关于KinsWathe修改
         BodymakerAbilityFakeRole = KinsWatheConfig.HANDLER.instance().BodymakerAbilityFakeRole; tag.putBoolean("BodymakerAbilityFakeRole", this.BodymakerAbilityFakeRole);
-        CleanerAbilityPrice = KinsWatheConfig.HANDLER.instance().CleanerAbilityPrice; tag.putInt("CleanerAbilityPrice", this.CleanerAbilityPrice);
         CookPanPrice = KinsWatheConfig.HANDLER.instance().CookPanPrice; tag.putInt("CookPanPrice", this.CookPanPrice);
         DetectiveAbilityPrice = KinsWatheConfig.HANDLER.instance().DetectiveAbilityPrice; tag.putInt("DetectiveAbilityPrice", this.DetectiveAbilityPrice);
         DrugmakerGetCoins = KinsWatheConfig.HANDLER.instance().DrugmakerGetCoins; tag.putInt("DrugmakerGetCoins", this.DrugmakerGetCoins);
@@ -100,7 +98,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         if (tag.contains("EnableNeutralAnnouncement"))   this.EnableNeutralAnnouncement = tag.getBoolean("EnableNeutralAnnouncement");
         //关于KinsWathe修改
         if (tag.contains("BodymakerAbilityFakeRole"))   this.BodymakerAbilityFakeRole = tag.getBoolean("BodymakerAbilityFakeRole");
-        if (tag.contains("CleanerAbilityPrice"))   this.CleanerAbilityPrice = tag.getInt("CleanerAbilityPrice");
         if (tag.contains("CookPanPrice"))   this.CookPanPrice = tag.getInt("CookPanPrice");
         if (tag.contains("DetectiveAbilityPrice"))   this.DetectiveAbilityPrice = tag.getInt("DetectiveAbilityPrice");
         if (tag.contains("DrugmakerGetCoins"))   this.DrugmakerGetCoins = tag.getInt("DrugmakerGetCoins");

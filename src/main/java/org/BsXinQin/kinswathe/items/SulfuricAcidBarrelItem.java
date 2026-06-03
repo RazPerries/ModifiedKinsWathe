@@ -29,9 +29,6 @@ public class SulfuricAcidBarrelItem extends Item {
             player.getWorld().playSound(null, playerBody.getX(), playerBody.getY() + .1f, playerBody.getZ(), SoundEvents.ITEM_BUCKET_EMPTY_LAVA, SoundCategory.PLAYERS, 1.0f, 0.5f);
             GameWorldComponent gameWorld = GameWorldComponent.KEY.get(player.getWorld());
             PlayerShopComponent playerShop = PlayerShopComponent.KEY.get(player);
-            if (gameWorld.isRole(player, KinsWatheRoles.CLEANER)) {
-                playerShop.addToBalance(KinsWatheConfig.HANDLER.instance().CleanerGetCoins);
-            }
             return ActionResult.SUCCESS;
         }
         return ActionResult.PASS;

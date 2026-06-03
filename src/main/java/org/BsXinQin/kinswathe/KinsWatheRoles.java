@@ -18,7 +18,6 @@ import org.BsXinQin.kinswathe.packet.host.AbilityC2SPacket;
 import org.BsXinQin.kinswathe.packet.roles.BodymakerC2SPacket;
 import org.BsXinQin.kinswathe.packet.roles.JudgeC2SPacket;
 import org.BsXinQin.kinswathe.roles.bodymaker.BodymakerAbility;
-import org.BsXinQin.kinswathe.roles.cleaner.CleanerAbility;
 import org.BsXinQin.kinswathe.roles.detective.DetectiveAbility;
 import org.BsXinQin.kinswathe.roles.dreamer.DreamerKillerComponent;
 import org.BsXinQin.kinswathe.roles.hacker.HackerPhoneComponent;
@@ -26,7 +25,6 @@ import org.BsXinQin.kinswathe.roles.hunter.HunterAbility;
 import org.BsXinQin.kinswathe.roles.judge.JudgeAbility;
 import org.BsXinQin.kinswathe.roles.robot.RobotAbility;
 import org.agmas.harpymodloader.Harpymodloader;
-import org.agmas.harpymodloader.config.HarpyModLoaderConfig;
 import org.agmas.harpymodloader.events.ModdedRoleAssigned;
 import org.agmas.harpymodloader.modifiers.HMLModifiers;
 import org.agmas.harpymodloader.modifiers.Modifier;
@@ -49,16 +47,6 @@ public class KinsWatheRoles {
     public static Role BODYMAKER = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID,"bodymaker"),
             0x2148d1,
-            false,
-            true,
-            Role.MoodType.FAKE,
-            -1,
-            true
-    ));
-    //清道夫
-    public static Role CLEANER = registerRole(new Role(
-            Identifier.of(KinsWathe.MOD_ID, "cleaner"),
-            0x16582C,
             false,
             true,
             Role.MoodType.FAKE,
@@ -257,7 +245,6 @@ public class KinsWatheRoles {
         List<Role> roles = new ArrayList<>();
         roles.add(WatheRoles.KILLER);
         roles.add(BODYMAKER);
-        roles.add(CLEANER);
         roles.add(COOK);
         roles.add(DETECTIVE);
         roles.add(DRUGMAKER);
@@ -286,7 +273,6 @@ public class KinsWatheRoles {
         List<Role> roles = new ArrayList<>();
         roles.add(WatheRoles.KILLER);
         roles.add(BODYMAKER);
-        roles.add(CLEANER);
         roles.add(COOK);
         roles.add(DREAMER);
         roles.add(DRUGMAKER);
@@ -378,10 +364,6 @@ public class KinsWatheRoles {
                 if (!gameWorld.isInnocent(player) && !gameWorld.canUseKillerFeatures(player)) playerShop.addToBalance(KinsWatheConfig.HANDLER.instance().InitialNeutralIncome);
                 if (gameWorld.canUseKillerFeatures(player)) playerShop.addToBalance(KinsWatheConfig.HANDLER.instance().InitialKillerIncome - 100);
             }
-            //清道夫初始物品
-            if (role.equals(CLEANER)) {
-                player.giveItemStack(KinsWatheItems.SULFURIC_ACID_BARREL.getDefaultStack());
-            }
             //梦者初始物品
             if (role.equals(DREAMER)) {
                 player.giveItemStack(new ItemStack(KinsWatheItems.DREAM_IMPRINT, KinsWatheConfig.HANDLER.instance().DreamerInitialItemQuantity));
@@ -415,7 +397,6 @@ public class KinsWatheRoles {
     /// 注册身份技能
     public static void registerRolesAbility() {
         ServerPlayNetworking.registerGlobalReceiver(AbilityC2SPacket.ID, (payload, context) -> {
-            CleanerAbility.register(context.player());
             DetectiveAbility.register(context.player());
             HunterAbility.register(context.player());
             RobotAbility.register(context.player());

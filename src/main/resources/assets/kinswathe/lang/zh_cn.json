@@ -12,9 +12,6 @@
   "announcement.role.kinswathe.bodymaker": "造尸怪",
   "announcement.goals.kinswathe.bodymaker": "伪造尸体，混淆视听",
 
-  "announcement.role.kinswathe.cleaner": "清道夫",
-  "announcement.goals.kinswathe.cleaner": "扫除一切障碍！",
-
   "announcement.role.kinswathe.cook": "厨师",
   "announcement.goals.kinswathe.cook": "透过墙壁看见吃过东西的玩家！",
 
@@ -144,10 +141,6 @@
   "guidebook.role.kinswathe:bodymaker": "造尸怪",
   "guidebook.role.title.kinswathe:bodymaker": "尸体捏造者",
   "guidebook.role.description.kinswathe:bodymaker": "尸体很容易欺骗人，而造尸怪最擅长的就是伪造尸体！\n\n无论是死因还是身份，造尸怪都能够在自己的作品上随意捏造，想必这一定会让调查者陷入重重困惑。",
-
-  "guidebook.role.kinswathe:cleaner": "清道夫",
-  "guidebook.role.title.kinswathe:cleaner": "不留痕迹",
-  "guidebook.role.description.kinswathe:cleaner": "清道夫是杀手组织派来的清理专家。\n\n初始携带一个硫酸桶，可以用来溶解尸体，并获得金币报酬。\n\n清道夫可以使用技能清理地面上的所有掉落物。\n\n对于杀手们来说，清道夫是最可靠的合作伙伴——毕竟，没有尸体就没有证据。",
 
   "guidebook.role.kinswathe:cook": "厨师",
   "guidebook.role.title.kinswathe:cook": "颠勺大师",
