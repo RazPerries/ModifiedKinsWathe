@@ -34,7 +34,6 @@ public class MedicalKitItem extends Item {
             if (!player.isInCreativeMode()) {
                 KinsWatheItems.setItemAfterUsing(player, this, null);
             }
-            itemStack.decrementUnlessCreative(1, player);
             player.sendMessage(Text.literal("You used the Medkit on yourself.").withColor(Color.GREEN.getRGB()), true);
             playerPoison.reset();
             player.playSoundToPlayer(SoundEvents.ENTITY_HORSE_ARMOR, SoundCategory.PLAYERS, 1.0f, 1.0f);
@@ -51,7 +50,6 @@ public class MedicalKitItem extends Item {
             if (!player.isInCreativeMode()) {
                 KinsWatheItems.setItemAfterUsing(player, this, null);
             }
-            player.getStackInHand(hand).decrementUnlessCreative(1, player);
             targetPoison.reset();
             player.playSoundToPlayer(SoundEvents.ENTITY_HORSE_ARMOR, SoundCategory.PLAYERS, 1.0f, 1.0f);
             return ActionResult.SUCCESS;

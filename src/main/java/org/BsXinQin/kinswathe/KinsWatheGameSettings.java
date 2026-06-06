@@ -35,7 +35,6 @@ import org.BsXinQin.kinswathe.roles.hacker.HackerComponent;
 import org.BsXinQin.kinswathe.roles.hacker.HackerPhoneComponent;
 import org.BsXinQin.kinswathe.roles.hunter.HunterComponent;
 import org.BsXinQin.kinswathe.roles.kidnapper.KidnapperComponent;
-import org.BsXinQin.kinswathe.roles.physician.PhysicianComponent;
 import org.BsXinQin.kinswathe.roles.technician.TechnicianComponent;
 import org.agmas.harpymodloader.events.ResetPlayerEvent;
 import org.jetbrains.annotations.NotNull;
@@ -149,9 +148,7 @@ public class KinsWatheGameSettings {
     public static void registerEvents() {
         //死亡事件
         AllowPlayerDeath.EVENT.register(((player, killer, identifier) -> {
-            GameWorldComponent gameWorld = GameWorldComponent.KEY.get(player.getWorld());
             DreamerComponent playerDream = DreamerComponent.KEY.get(player);
-            PhysicianComponent playerPhysician = PhysicianComponent.KEY.get(player);
             PlayerPoisonComponent.KEY.get(player).reset();
             //安全时间死亡事件
             if (GameSafeComponent.KEY.get(player.getWorld()).isSafe()) {
@@ -169,13 +166,6 @@ public class KinsWatheGameSettings {
             if (playerDream.dreamArmor > 0) {
                 playerDream.teleportToDreamer();
                 playerDream.reset();
-                return false;
-            }
-            //医师死亡事件
-            if (playerPhysician.physicianArmor > 0) {
-                if (identifier == GameConstants.DeathReasons.FELL_OUT_OF_TRAIN) return true;
-                playerPhysician.armorSound();
-                playerPhysician.reset();
                 return false;
             }
             return true;
@@ -199,7 +189,6 @@ public class KinsWatheGameSettings {
             HackerPhoneComponent.KEY.get(player).reset();
             HunterComponent.KEY.get(player).reset();
             KidnapperComponent.KEY.get(player).reset();
-            PhysicianComponent.KEY.get(player).reset();
             TechnicianComponent.KEY.get(player).reset();
         });
     }
