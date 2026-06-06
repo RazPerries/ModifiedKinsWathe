@@ -7,8 +7,8 @@ import dev.doctor4t.wathe.client.WatheClient;
 import dev.doctor4t.wathe.client.gui.screen.ingame.LimitedHandledScreen;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
-import org.BsXinQin.kinswathe.KinsWatheRoles;
 import org.BsXinQin.kinswathe.client.roles.bodymaker.BodymakerRoleWidget;
+import org.agmas.noellesroles.Noellesroles;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -35,7 +35,7 @@ public class BodymakerDoNotCloseMixin {
         if (MinecraftClient.getInstance().player == null) return;
         GameWorldComponent gameWorld = GameWorldComponent.KEY.get(MinecraftClient.getInstance().player.getWorld());
         if (BodymakerRoleWidget.stopClosing) {
-            if (WatheClient.isPlayerSpectatingOrCreative() || !gameWorld.isRole(MinecraftClient.getInstance().player, KinsWatheRoles.BODYMAKER)) {
+            if (WatheClient.isPlayerSpectatingOrCreative() || !gameWorld.isRole(MinecraftClient.getInstance().player, Noellesroles.MORPHLING)) {
                 BodymakerRoleWidget.stopClosing = false;
             }
         }

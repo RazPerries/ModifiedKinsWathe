@@ -14,11 +14,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import org.BsXinQin.kinswathe.KinsWatheRoles;
 import org.BsXinQin.kinswathe.client.roles.bodymaker.BodymakerDeathReasonWidget;
 import org.BsXinQin.kinswathe.client.roles.bodymaker.BodymakerPlayerWidget;
 import org.BsXinQin.kinswathe.client.roles.bodymaker.BodymakerRoleWidget;
 import org.BsXinQin.kinswathe.client.roles.bodymaker.BodymakerScreenCallback;
+import org.agmas.noellesroles.Noellesroles;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -45,10 +45,10 @@ public abstract class BodymakerScreenMixin extends LimitedHandledScreen<PlayerSc
     @Inject(method = "init", at = @At("HEAD"))
     void renderBodymakerHeads(CallbackInfo ci) {
         GameWorldComponent gameWorld = GameWorldComponent.KEY.get(this.player.getWorld());
-        if (gameWorld.isRole(this.player, KinsWatheRoles.BODYMAKER)) {
+        if (gameWorld.isRole(this.player, Noellesroles.MORPHLING)) {
             int apart = 36;
             int shouldBeY = (this.height - 32) / 2;
-            int y = shouldBeY + 80;
+            int y = shouldBeY + 144;
             if (selectedLevel == 0) {
                 List<UUID> players = new ArrayList<>(MinecraftClient.getInstance().player.networkHandler.getPlayerUuids());
                 int x = this.width / 2 - (players.size()) * apart / 2 + 9;
