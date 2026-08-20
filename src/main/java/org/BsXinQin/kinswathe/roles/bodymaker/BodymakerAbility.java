@@ -22,10 +22,10 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3d;
 import org.BsXinQin.kinswathe.KinsWatheConfig;
+import org.BsXinQin.kinswathe.KinsWatheRoles;
 import org.BsXinQin.kinswathe.component.AbilityPlayerComponent;
 import org.BsXinQin.kinswathe.component.BodyDeathReasonComponent;
 import org.BsXinQin.kinswathe.packet.roles.BodymakerC2SPacket;
-import org.agmas.noellesroles.Noellesroles;
 import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.Field;
@@ -37,7 +37,7 @@ public class BodymakerAbility {
     public static void register(@NotNull BodymakerC2SPacket payload, @NotNull PlayerEntity player) {
         GameWorldComponent gameWorld = GameWorldComponent.KEY.get(player.getWorld());
         AbilityPlayerComponent ability = AbilityPlayerComponent.KEY.get(player);
-        if (gameWorld.isRole(player, Noellesroles.MORPHLING) && GameFunctions.isPlayerAliveAndSurvival(player) && ability.cooldown <= 0) {
+        if (gameWorld.isRole(player, KinsWatheRoles.BODYMAKER) && GameFunctions.isPlayerAliveAndSurvival(player) && ability.cooldown <= 0) {
             ServerPlayerEntity target = player.getServer().getPlayerManager().getPlayer(payload.target());
             if (target != null) {
                 PlayerBodyEntity playerBody = WatheEntities.PLAYER_BODY.create(target.getWorld());
@@ -68,7 +68,7 @@ public class BodymakerAbility {
                             Method syncMethod = bodyDeathReasonClass.getMethod("sync");
                             deathReasonField.set(deathReasonInstance, Identifier.of(payload.deathReason()));
                             if (!KinsWatheConfig.HANDLER.instance().BodymakerAbilityFakeRole) {
-                                if (gameWorld.isRole(target, Noellesroles.MORPHLING)) {
+                                if (gameWorld.isRole(target, KinsWatheRoles.BODYMAKER)) {
                                     playerRoleField.set(deathReasonInstance, WatheRoles.KILLER.identifier());
                                 } else {
                                     playerRoleField.set(deathReasonInstance, gameWorld.getRole(target) != null ? gameWorld.getRole(target).identifier() : WatheRoles.CIVILIAN.identifier());

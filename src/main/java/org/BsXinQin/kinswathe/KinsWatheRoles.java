@@ -41,6 +41,16 @@ public class KinsWatheRoles {
     public static HashMap<String, Modifier> getModifiers() {return MODIFIERS;}
 
     /// 新增身份
+    //造尸怪
+    public static Role BODYMAKER = registerRole(new Role(
+            Identifier.of(KinsWathe.MOD_ID,"bodymaker"),
+            new Color(32, 77, 104).getRGB(),
+            false,
+            true,
+            Role.MoodType.FAKE,
+            -1,
+            true
+    ));
     //厨师
     public static Role COOK = registerRole(new Role(
             Identifier.of(KinsWathe.MOD_ID, "cook"),
@@ -202,6 +212,7 @@ public class KinsWatheRoles {
     public static List<Role> rolesHaveTaskIncome() {
         List<Role> roles = new ArrayList<>();
         roles.add(WatheRoles.KILLER);
+        roles.add(BODYMAKER);
         roles.add(COOK);
         roles.add(DRUGMAKER);
         roles.add(HUNTER);
@@ -226,6 +237,7 @@ public class KinsWatheRoles {
     public static List<Role> rolesHavePassiveIncome() {
         List<Role> roles = new ArrayList<>();
         roles.add(WatheRoles.KILLER);
+        roles.add(BODYMAKER);
         roles.add(COOK);
         roles.add(DREAMER);
         roles.add(DRUGMAKER);
