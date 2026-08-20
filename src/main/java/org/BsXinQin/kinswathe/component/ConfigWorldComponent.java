@@ -33,9 +33,8 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
     //关于KinsWathe修改
     public boolean BodymakerAbilityFakeRole = true;
     public int CookPanPrice = 250;
-    public int DrugmakerGetCoins = 50;
     public int DrugmakerPoisonInjectorPrice = 100;
-    public int DrugmakerBlowgunPrice = 175;
+    public int DrugmakerBlowgunPrice = 250;
     public int HackerHackingTime = GameConstants.getInTicks(0,30) / 20;
     public boolean HackerHasShop = true;
     public int HackerRefreshWeaponCooldownPrice = 300;
@@ -61,7 +60,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         //关于KinsWathe修改
         BodymakerAbilityFakeRole = KinsWatheConfig.HANDLER.instance().BodymakerAbilityFakeRole; tag.putBoolean("BodymakerAbilityFakeRole", this.BodymakerAbilityFakeRole);
         CookPanPrice = KinsWatheConfig.HANDLER.instance().CookPanPrice; tag.putInt("CookPanPrice", this.CookPanPrice);
-        DrugmakerGetCoins = KinsWatheConfig.HANDLER.instance().DrugmakerGetCoins; tag.putInt("DrugmakerGetCoins", this.DrugmakerGetCoins);
         DrugmakerPoisonInjectorPrice = KinsWatheConfig.HANDLER.instance().DrugmakerPoisonInjectorPrice; tag.putInt("DrugmakerPoisonInjectorPrice", this.DrugmakerPoisonInjectorPrice);
         DrugmakerBlowgunPrice = KinsWatheConfig.HANDLER.instance().DrugmakerBlowgunPrice; tag.putInt("DrugmakerBlowgunPrice", this.DrugmakerBlowgunPrice);
         HackerHackingTime = KinsWatheConfig.HANDLER.instance().HackerHackingTime; tag.putInt("HackerHackingTime", this.HackerHackingTime);
@@ -89,7 +87,6 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
         //关于KinsWathe修改
         if (tag.contains("BodymakerAbilityFakeRole"))   this.BodymakerAbilityFakeRole = tag.getBoolean("BodymakerAbilityFakeRole");
         if (tag.contains("CookPanPrice"))   this.CookPanPrice = tag.getInt("CookPanPrice");
-        if (tag.contains("DrugmakerGetCoins"))   this.DrugmakerGetCoins = tag.getInt("DrugmakerGetCoins");
         if (tag.contains("DrugmakerPoisonInjectorPrice"))   this.DrugmakerPoisonInjectorPrice = tag.getInt("DrugmakerPoisonInjectorPrice");
         if (tag.contains("DrugmakerBlowgunPrice"))   this.DrugmakerBlowgunPrice = tag.getInt("DrugmakerBlowgunPrice");
         if (tag.contains("HackerHackingTime"))   this.HackerHackingTime = tag.getInt("HackerHackingTime");

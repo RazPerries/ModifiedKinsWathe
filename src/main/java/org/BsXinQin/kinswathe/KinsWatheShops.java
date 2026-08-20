@@ -73,17 +73,13 @@ public class KinsWatheShops {
     //制毒师商店
     public static List<ShopEntry> getDrugmakerShop(@NotNull World world) {
         return Util.make(new ArrayList<>(), (entries) -> {
-            entries.add(new ShopEntry(KinsWatheItems.POISON_INJECTOR.getDefaultStack(), ConfigWorldComponent.KEY.get(world).DrugmakerPoisonInjectorPrice, ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(KinsWatheItems.BLOWGUN.getDefaultStack(), ConfigWorldComponent.KEY.get(world).DrugmakerBlowgunPrice, ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.KNIFE.getDefaultStack(), getItemPrice("KNIFE", 100) * 2, ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.POISON_VIAL.getDefaultStack(), getItemPrice("POISON_VIAL", 100) / 2, ShopEntry.Type.POISON));
-            entries.add(new ShopEntry(WatheItems.SCORPION.getDefaultStack(), getItemPrice("SCORPION", 50) / 2, ShopEntry.Type.POISON));
-            entries.add(new ShopEntry(WatheItems.FIRECRACKER.getDefaultStack(), getItemPrice("FIRECRACKER", 10), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.LOCKPICK.getDefaultStack(), getItemPrice("LOCKPICK", 50), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.CROWBAR.getDefaultStack(), getItemPrice("CROWBAR", 25), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.BODY_BAG.getDefaultStack(), getItemPrice("BODY_BAG", 200), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.BLACKOUT.getDefaultStack(), getItemPrice("BLACKOUT", 200), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.NOTE.getDefaultStack(), getItemPrice("NOTE", 10), ShopEntry.Type.TOOL));
+            entries.addAll(GameConstants.SHOP_ENTRIES);
+            entries.remove(6);
+            entries.remove(5);
+            entries.addFirst(new ShopEntry(KinsWatheItems.POISON_INJECTOR.getDefaultStack(), 100, ShopEntry.Type.POISON));
+            entries.addFirst(new ShopEntry(KinsWatheItems.BLOWGUN.getDefaultStack(), 250, ShopEntry.Type.POISON));
+            entries.addLast(new ShopEntry(WatheItems.POISON_VIAL.getDefaultStack(), 50, ShopEntry.Type.POISON));
+            entries.addLast(new ShopEntry(WatheItems.SCORPION.getDefaultStack(), 25, ShopEntry.Type.POISON));
         });
     }
     //黑客商店
@@ -102,17 +98,9 @@ public class KinsWatheShops {
     //追猎者商店
     public static List<ShopEntry> getHunterShop(@NotNull World world) {
         return Util.make(new ArrayList<>(), (entries) -> {
-            entries.add(new ShopEntry(KinsWatheItems.HUNTING_KNIFE.getDefaultStack(), getItemPrice("KNIFE", 100), ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.KNIFE.getDefaultStack(), getItemPrice("KNIFE", 100) * 7 / 4, ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.REVOLVER.getDefaultStack(), getItemPrice("REVOLVER", 300), ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.GRENADE.getDefaultStack(), getItemPrice("GRENADE", 350), ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.PSYCHO_MODE.getDefaultStack(), getItemPrice("PSYCHO_MODE", 300), ShopEntry.Type.WEAPON));
-            entries.add(new ShopEntry(WatheItems.FIRECRACKER.getDefaultStack(), getItemPrice("FIRECRACKER", 10), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.LOCKPICK.getDefaultStack(), getItemPrice("LOCKPICK", 50), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.CROWBAR.getDefaultStack(), getItemPrice("CROWBAR", 25), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.BODY_BAG.getDefaultStack(), getItemPrice("BODY_BAG", 200), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.BLACKOUT.getDefaultStack(), getItemPrice("BLACKOUT", 200), ShopEntry.Type.TOOL));
-            entries.add(new ShopEntry(WatheItems.NOTE.getDefaultStack(), getItemPrice("NOTE", 10), ShopEntry.Type.TOOL));
+            entries.addAll(GameConstants.SHOP_ENTRIES);
+            entries.removeFirst();
+            entries.addFirst(new ShopEntry(KinsWatheItems.HUNTING_KNIFE.getDefaultStack(), getItemPrice("KNIFE", 75), ShopEntry.Type.WEAPON));
         });
     }
     //绑匪商店

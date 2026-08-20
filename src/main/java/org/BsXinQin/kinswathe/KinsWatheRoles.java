@@ -48,7 +48,7 @@ public class KinsWatheRoles {
             false,
             true,
             Role.MoodType.FAKE,
-            -1,
+            WatheRoles.CIVILIAN.getMaxSprintTime()*2,
             true
     ));
     //厨师
@@ -68,7 +68,7 @@ public class KinsWatheRoles {
             false,
             false,
             Role.MoodType.FAKE,
-            -1,
+            WatheRoles.CIVILIAN.getMaxSprintTime(),
             true
     ));
     //制毒师
@@ -78,7 +78,7 @@ public class KinsWatheRoles {
             false,
             true,
             Role.MoodType.FAKE,
-            -1,
+            WatheRoles.CIVILIAN.getMaxSprintTime()*2,
             true
     ));
     //黑客
@@ -98,7 +98,7 @@ public class KinsWatheRoles {
             false,
             true,
             Role.MoodType.FAKE,
-            -1,
+            WatheRoles.CIVILIAN.getMaxSprintTime()*2,
             true
     ));
     //绑匪
@@ -108,7 +108,7 @@ public class KinsWatheRoles {
             false,
             true,
             Role.MoodType.FAKE,
-            -1,
+            WatheRoles.CIVILIAN.getMaxSprintTime()*2,
             true
     ));
     //医师
