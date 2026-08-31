@@ -343,7 +343,7 @@ public class KinsWatheRoles {
             }
             //医师初始物品
             if (role.equals(PHYSICIAN)) {
-                player.giveItemStack(KinsWatheItems.MEDICAL_KIT.getDefaultStack());
+                player.giveItemStack(KinsWatheItems.PILL.getDefaultStack());
             }
         });
     }
