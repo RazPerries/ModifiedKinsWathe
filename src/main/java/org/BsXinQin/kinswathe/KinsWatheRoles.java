@@ -5,12 +5,13 @@ import dev.doctor4t.wathe.api.WatheRoles;
 import dev.doctor4t.wathe.cca.GameWorldComponent;
 import dev.doctor4t.wathe.cca.PlayerShopComponent;
 import dev.doctor4t.wathe.client.gui.RoleAnnouncementTexts;
-import dev.doctor4t.wathe.index.WatheItems;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 import org.BsXinQin.kinswathe.component.AbilityPlayerComponent;
@@ -30,6 +31,7 @@ import org.jetbrains.annotations.NotNull;
 import java.awt.*;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -340,6 +342,12 @@ public class KinsWatheRoles {
             //绑匪初始物品
             if (role.equals(KIDNAPPER)) {
                 player.giveItemStack(KinsWatheItems.KNOCKOUT_DRUG.getDefaultStack());
+            }
+            if (role.equals(COOK)) {
+                ArrayList<Item> cookFoods = new ArrayList<>(List.of(Items.APPLE, Items.COOKED_BEEF, Items.COOKED_PORKCHOP, Items.GOLDEN_CARROT, Items.SWEET_BERRIES, Items.COOKED_SALMON, Items.COOKED_MUTTON, Items.PUMPKIN_PIE));
+                Collections.shuffle((cookFoods));
+                player.giveItemStack(cookFoods.getFirst().getDefaultStack());
+                player.giveItemStack(cookFoods.getLast().getDefaultStack());
             }
             //医师初始物品
             if (role.equals(PHYSICIAN)) {

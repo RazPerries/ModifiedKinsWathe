@@ -27,7 +27,7 @@ public abstract class CookInstinctMixin {
             if (GameFunctions.isPlayerAliveAndSurvival(targetPlayer)) {
                 CookComponent targetEat = CookComponent.KEY.get(targetPlayer);
                 if (gameWorld.isRole(MinecraftClient.getInstance().player, KinsWatheRoles.COOK) && WatheClient.isPlayerAliveAndInSurvival() && targetEat.eatTicks > 0) {
-                    cir.setReturnValue(Color.GREEN.getRGB());
+                    cir.setReturnValue(KinsWatheRoles.COOK.color());
                 }
             }
         }

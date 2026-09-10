@@ -33,6 +33,7 @@ public record PanC2SPacket(int target) implements CustomPayload {
             KinsWatheItems.setItemAfterUsing(player, KinsWatheItems.PAN, null);
             target.playSound(SoundEvents.BLOCK_ANVIL_LAND, 0.8f, 0.8f);
             player.swingHand(Hand.MAIN_HAND);
+            player.getStackInHand(Hand.MAIN_HAND).decrementUnlessCreative(1, player);
         }
     }
 }

@@ -24,7 +24,7 @@ public abstract class CookFinishEatMixin {
             Item item = stack.getItem();
             if (item.getUseAction(stack) == UseAction.EAT) {
                 CookComponent playerEat = CookComponent.KEY.get(player);
-                playerEat.setEatTicks(GameConstants.getInTicks(0, 40));
+                playerEat.setEatTicks(GameConstants.getInTicks(0, 10));
             }
         }
     }
