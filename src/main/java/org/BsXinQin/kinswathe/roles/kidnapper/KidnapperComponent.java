@@ -52,7 +52,7 @@ public class KidnapperComponent implements AutoSyncedComponent, ServerTickingCom
 
     public void startControl(@NotNull PlayerEntity controller) {
         this.controllerUUID = controller.getUuid();
-        this.controlTicks = GameConstants.getInTicks(0,20);
+        this.controlTicks = GameConstants.getInTicks(0,8);
         this.sync();
     }
 

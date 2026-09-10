@@ -28,12 +28,6 @@ public class KnockoutDrugItem extends Item {
         if (!player.getWorld().isClient && entity instanceof @NotNull PlayerEntity targetPlayer) {
             KinsWatheItems.setItemAfterUsing(player, this, hand);
             KidnapperComponent playerControlled = KidnapperComponent.KEY.get(targetPlayer);
-            GameWorldComponent gameWorld = GameWorldComponent.KEY.get(player.getWorld());
-            if (gameWorld.isRole(targetPlayer, KinsWatheRoles.ROBOT)) {
-                player.sendMessage(Text.translatable("tip.kinswathe.kidnapper.daze_failed").withColor(Color.RED.getRGB()), true);
-                player.playSoundToPlayer(SoundEvents.ENTITY_VILLAGER_AMBIENT, SoundCategory.PLAYERS, 1.0f, 1.0f);
-                return ActionResult.SUCCESS;
-            }
             if (playerControlled.controlTicks <= 0) {
                 playerControlled.startControl(player);
                 player.playSoundToPlayer(SoundEvents.ENTITY_SHEEP_AMBIENT, SoundCategory.PLAYERS, 1.0f, 1.0f);

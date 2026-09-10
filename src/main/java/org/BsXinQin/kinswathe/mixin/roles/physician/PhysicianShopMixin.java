@@ -35,7 +35,7 @@ public abstract class PhysicianShopMixin {
             switch (index) {
                 case 0:
                     this.item = KinsWatheItems.PILL;
-                    this.price = 200;
+                    this.price = 150;
                     break;
                 default:
                     return;

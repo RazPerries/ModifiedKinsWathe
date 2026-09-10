@@ -118,51 +118,51 @@
 
   "guidebook.namespace.kinswathe": "Mod: Kin's Wathe",
 
-  "guidebook.role.kinswathe:bodymaker": "Bodymaker",
-  "guidebook.role.title.kinswathe:bodymaker": "Body Forger",
-  "guidebook.role.description.kinswathe:bodymaker": "Bodies are easy to deceive, and the Bodymaker specializes in forging them!\n\nWhether it's cause of death or identity, the Bodymaker can freely fabricate details on their creations, surely leaving investigators deeply perplexed.",
+  "guidebook.role.kinswathe:bodymaker": "Bodymaker (DISABLED)",
+  "guidebook.role.title.kinswathe:bodymaker": "TBD",
+  "guidebook.role.description.kinswathe:bodymaker": "An interesting role that can create bodies.\n\nNot sure how to implement it without it being completely gamebreaking.",
 
   "guidebook.role.kinswathe:cook": "Cook",
-  "guidebook.role.title.kinswathe:cook": "Frying Pan Master",
-  "guidebook.role.description.kinswathe:cook": "The most popular person on the train — after all, who doesn't want a hot meal during the journey?\n\nPan isn't just for cooking; in critical moments, it can be used as weapon to stun enemies. It can even block bullets!\n\nWhenever a passenger eats food, the Cook can briefly see their location — after all, no one can escape the Cook's gaze.\n\nRemember, the Cook is just an ordinary person. Don't go chasing killers with Pan...",
+  "guidebook.role.title.kinswathe:cook": "PAN PAN PAN",
+  "guidebook.role.description.kinswathe:cook": "An expert in foods and cuisine.\n\n - Spawns with 2 food items at the start of the round.\n\n - Can buy food from the shop for 75 coins and a Pan for 250 coins.\n\nPan Item (250 coins):\n\n - Holding down right-click for 1s and releasing on another player stuns them for 5s.\n\n - If you hold out the pan and get shot at, it will save you for that bullet.\n\n - If used for either purpose, then the pan will be broken and removed from your inventory.\n\n - Has a cooldown of 45s when used to bash someone's head.",
 
-  "guidebook.role.kinswathe:dreamer": "Dreamer",
-  "guidebook.role.title.kinswathe:dreamer": "Illusion Weaver",
-  "guidebook.role.description.kinswathe:dreamer": "The Dreamer serves the killer organization, walking between reality and illusion.\n\nStarts with Dream Imprint, which can be used on a target, allowing them to withstand one extra attack.\n\nWhen a marked target takes damage, they are instantly teleported back to the Dreamer, and the Dreamer gains one count toward the number of non-killer players who have taken the Illusion Reagent.\n\nThe number of non-killer players required to take the Illusion Reagent is one-quarter of the total players. When enough non-killer players have taken it, the Dreamer's identity transforms into a killer.\n\nTo the Dreamer, reality is merely a dream that can be rewritten.",
+  "guidebook.role.kinswathe:dreamer": "Dreamer (DISABLED)",
+  "guidebook.role.title.kinswathe:dreamer": "Forever Disabled",
+  "guidebook.role.description.kinswathe:dreamer": "An unnecessary accomplice role.\n\nHowever, it is very embedded into the code and is annoying to get rid of.",
 
   "guidebook.role.kinswathe:drugmaker": "Drugmaker",
-  "guidebook.role.title.kinswathe:drugmaker": "Lethal Formula",
-  "guidebook.role.description.kinswathe:drugmaker": "The Drugmaker is the killer most skilled with poisons, savoring every second of his prey's suffering after being poisoned. He is only deployed to assist killers when there are enough players.\n\nThe Drugmaker can see players who are genuinely poisoned — after all, they are his masterpieces. Whenever a player is poisoned, he receives a reward of coins.\n\nPoison Injector and Blowgun can be purchased at the shop — two distinctly different methods of poisoning.\n\nFor the Drugmaker, death is just a matter of prescription.",
+  "guidebook.role.title.kinswathe:drugmaker": "JESSE! WE NEED TO COOK",
+  "guidebook.role.description.kinswathe:drugmaker": "An expert in poisons and fabrication of poison weaponry.\n\n - Can see poisoned players even without instinct.\n\n - Has cheaper access to poison vials and scorpions.\n\n - Has unique access to the poison injector and blowgun.\n\n - Cannot spawn in unless there is 1 other killer.\n\nPoison Injector Item (100 coins)\n\n - Can be used to directly poison a player upon right-clicking them.\n\n - If the person is already poisoned, then it will kill them instead. \n\n - 1 time use, has a cooldown of 60s.\n\nBlowgun (250 coins)\n\n - A ranged way to poison a player.\n\n - Makes noise when used and is visible to other players.\n\n - 1 time use, has a cooldown of 60s.",
 
-  "guidebook.role.kinswathe:hacker": "Hacker",
-  "guidebook.role.title.kinswathe:hacker": "Shadow Supporter",
-  "guidebook.role.description.kinswathe:hacker": "The Hacker is the technical elite of the killer team, working in the shadows to help killers achieve their winning goal.\n\nThe Hacker equips all killers with phones, enabling them to communicate remotely.\n\nCracking roles is also a skill a hacker should possess — after staring at a player long enough, they can crack their role and send it to all killers' phones, and get coins.\n\nOf course, the Hacker can also use their technology to help killers turn off lights, refresh weapon cooldowns or ability cooldowns, and even clear potion effects from them!\n\nRemember, the Hacker needs to stay undercover — never reveal their role to civilians too early...",
+  "guidebook.role.kinswathe:hacker": "Hacker (DISABLED)",
+  "guidebook.role.title.kinswathe:hacker": "TBD",
+  "guidebook.role.description.kinswathe:hacker": "A very busted Accomplice that needs to be reworked.\n\nThe reason why it's not being removed though is because it has interesting mechanics.\n\nHaven't decided how to though.",
 
   "guidebook.role.kinswathe:hunter": "Hunter",
   "guidebook.role.title.kinswathe:hunter": "Hunting Time",
-  "guidebook.role.description.kinswathe:hunter": "A born chaser, the Hunter thoroughly enjoys the feeling of prey being pursued!\n\nWhen sprinting while holding a knife, the Hunter's movement speed is greatly increased. Hunting Knife will be added to the store — it has a longer holding time, but instantly cooldown when holding stops.\n\nThe Hunter can use his ability to instantly refresh the cooldown of all knives in his inventory, granting him terrifying chain-kill potential.\n\nRunning away only fuels his hunting desire!",
+  "guidebook.role.description.kinswathe:hunter": "A born chaser, and an athletic runner.\n\n - Has greater move speed when sprinting with a knife held down.\n\n - Has access to the Hunting Knife, a better knife with a longer holding time, shorter knife cooldown, but a cooldown when you stop holding down.\n\nAbility (150 coins):\n\n - Instantly refreshes all knife cooldowns.\n\n - Has a cooldown of 10s.",
 
-  "guidebook.role.kinswathe:kidnapper": "Kidnapper",
+  "guidebook.role.kinswathe:kidnapper": "Kidnapper (DISABLED)",
   "guidebook.role.title.kinswathe:kidnapper": "Dark Dealings",
-  "guidebook.role.description.kinswathe:kidnapper": "The Kidnapper doesn't kill openly; he prefers to turn his prey into obedient puppets.\n\nKnockout Drug can be purchased at the shop. Using it renders a target unconscious, causing them to follow the Kidnapper. The Kidnapper also boards the train with Knockout Drug, just in case.\n\nIf the Kidnapper personally kill the dazed target, he will receive an additional reward.\n\nA target affected by Knockout Drug will have a black screen, unable to attack, use items, or use voice chat — they can only follow blindly until the effect wears off. However, if you can get far enough away during this time, the Kidnapper won't be able to catch you.\n\nNo one knows where the Kidnapper takes these passengers, and no one wants to know.",
+  "guidebook.role.description.kinswathe:kidnapper": "This role isn't going to be used since it's merged with Muzzler.\n\nHowever, it does contain an important component so I'm not deleting it yet until I figure out how to without breaking everything.",
 
   "guidebook.role.kinswathe:physician": "Physician",
-  "guidebook.role.title.kinswathe:physician": "Angel in White",
-  "guidebook.role.description.kinswathe:physician": "The most trustworthy person on the train, sworn to heal the wounded and save the dying!\n\nThe Physician has a keen sense of smell, allowing them to see poisoned passengers — though they seem unable to distinguish the Illusion Reagent. They also have 15 seconds of sprint time, enough to reach patients in critical moments. Of course, analyzing the cause of death of bodies is also an essential skill for the Physician.\n\nStarts with Medical Kit, which can be used to detoxify a player. This action is also considered completing a task and rewards corresponding payment.\n\nPill can be purchased at the shop. Taking it allows the Physician to withstand one additional attack.",
+  "guidebook.role.title.kinswathe:physician": "MEDIC HELLLPP",
+  "guidebook.role.description.kinswathe:physician": "An expert in poison cleansing.\n\n - Starts with Pill and can buy Pills in their Shop for 150 coins.\n\n - Pills can be self-used on the Physician, so make sure to take them out before attempting mass poison!",
 
   "guidebook.role.kinswathe:robot": "Robot",
-  "guidebook.role.title.kinswathe:robot": "Mechanical Being",
-  "guidebook.role.description.kinswathe:robot": "The Robot has infiltrated this train; no one knows its purpose.\n\nAs a mechanical construct, it has no mood, is immune to poison, cannot be knocked out by Knockout Drug, and has unlimited stamina.\n\nEvery so often, the Robot can activate Night Vision mode, allowing it to see clearly in the dark.\n\nSome say it's just malfunctioning, while others believe it carries some kind of mission...",
+  "guidebook.role.title.kinswathe:robot": "Clanker",
+  "guidebook.role.description.kinswathe:robot": "A mechanical being with survival measures installed.\n\n - Has an instance of poison defense at the start of the round.\n\n - When poisoned, they are notified. This includes both defended and undefended poisons.\n\n - Poison defense is strictly preventive. If you are already poisoned, then it will do nothing.\n\nAbility (Costs 150 coins):\n\n - When used, it refreshes your poison defense. (Does not stack)\n\n - Additionally gives 10s of night vision and x4 stamina regeneration.\n\n - Has a cooldown of 90s.",
 
-  "guidebook.role.kinswathe:technician": "Technician",
-  "guidebook.role.title.kinswathe:technician": "Professional Maintenance Worker",
-  "guidebook.role.description.kinswathe:technician": "The Technician is responsible for the maintenance of the entire train.\n\nEvery time the Technician completes a task, they receive 50 coins. They can purchase a Wrench to repair jammed or pried doors.\n\nAdditionally, they can purchase a Capture Device to check for suspicious passengers passing by.\n\nDuring the blackout, the Technician can quickly restore the power system, catching the killers off guard!",
+  "guidebook.role.kinswathe:technician": "Technician (DISABLED)",
+  "guidebook.role.title.kinswathe:technician": "TBD",
+  "guidebook.role.description.kinswathe:technician": "A very interesting and OP role. However, it becomes boring if stripped of it's OPness. Needs to be reworked with considerations.",
 
-  "guidebook.role.kinswathe:magnate": "Magnate",
-  "guidebook.role.title.kinswathe:magnate": "Fortune's Favorite",
-  "guidebook.role.description.kinswathe:magnate": "The Magnate is the wealthiest person on the train, his pockets always full of endless coins.\n\nThe Magnate's passive income is twice that of other characters.",
+  "guidebook.role.kinswathe:magnate": "Magnate (DISABLED)",
+  "guidebook.role.title.kinswathe:magnate": "Why",
+  "guidebook.role.description.kinswathe:magnate": "An unnecessary modifier. However, it does have a use when converted to Innocents only.",
 
-  "guidebook.role.kinswathe:taskmaster": "Taskmaster",
-  "guidebook.role.title.kinswathe:taskmaster": "More Work, More Pay",
-  "guidebook.role.description.kinswathe:taskmaster": "Hard work pays off — the Taskmaster's income is tied to tasks.\n\nIf the Taskmaster is on the killer team, completing a task rewards 50 coins.\n\nIf on the non-killer team, completing a task grants an additional 25 coins on top of the regular reward."
+  "guidebook.role.kinswathe:taskmaster": "Taskmaster (DISABLED)",
+  "guidebook.role.title.kinswathe:taskmaster": "Why 2.0",
+  "guidebook.role.description.kinswathe:taskmaster": "Another unnecessary modifier."
 }
