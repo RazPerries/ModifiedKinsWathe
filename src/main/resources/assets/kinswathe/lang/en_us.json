@@ -132,7 +132,7 @@
 
   "guidebook.role.kinswathe:drugmaker": "Drugmaker",
   "guidebook.role.title.kinswathe:drugmaker": "JESSE! WE NEED TO COOK",
-  "guidebook.role.description.kinswathe:drugmaker": "An expert in poisons and fabrication of poison weaponry.\n\n - Can see poisoned players even without instinct.\n\n - Has cheaper access to poison vials and scorpions.\n\n - Has unique access to the poison injector and blowgun.\n\n - Cannot spawn in unless there is 1 other killer.\n\nPoison Injector Item (100 coins)\n\n - Can be used to directly poison a player upon right-clicking them.\n\n - If the person is already poisoned, then it will kill them instead. \n\n - 1 time use, has a cooldown of 60s.\n\nBlowgun (250 coins)\n\n - A ranged way to poison a player.\n\n - Makes noise when used and is visible to other players.\n\n - 1 time use, has a cooldown of 60s.",
+  "guidebook.role.description.kinswathe:drugmaker": "An expert in poisons and fabrication of poison weaponry.\n\n - Can see poisoned players even without instinct.\n\n - Has cheaper access to poison vials and scorpions.\n\n - Has unique access to the poison injector and blowgun.\n\n - Cannot spawn in unless there is 1 other killer.\n\nPoison Injector Item (80 coins)\n\n - Can be used to directly poison a player upon right-clicking them.\n\n - If the person is already poisoned, then it will kill them instead. \n\n - 1 time use, has a cooldown of 60s.\n\nBlowgun (180 coins)\n\n - A ranged way to poison a player.\n\n - Makes noise when used and is visible to other players.\n\n - 1 time use, has a cooldown of 60s.",
 
   "guidebook.role.kinswathe:hacker": "Hacker (DISABLED)",
   "guidebook.role.title.kinswathe:hacker": "TBD",
@@ -140,7 +140,7 @@
 
   "guidebook.role.kinswathe:hunter": "Hunter",
   "guidebook.role.title.kinswathe:hunter": "Hunting Time",
-  "guidebook.role.description.kinswathe:hunter": "A born chaser, and an athletic runner.\n\n - Has greater move speed when sprinting with a knife held down.\n\n - Has access to the Hunting Knife, a better knife with a longer holding time, shorter knife cooldown, but a cooldown when you stop holding down.\n\nAbility (150 coins):\n\n - Instantly refreshes all knife cooldowns.\n\n - Has a cooldown of 10s.",
+  "guidebook.role.description.kinswathe:hunter": "A born chaser, and an athletic runner.\n\n - Has greater move speed when sprinting with a knife held down.\n\n - Has access to the Hunting Knife, a better knife with a longer holding time, shorter knife cooldown, but a cooldown when you stop holding down.\n\nAbility (125 coins):\n\n - Instantly refreshes all knife cooldowns.\n\n - Has a cooldown of 5s.",
 
   "guidebook.role.kinswathe:kidnapper": "Kidnapper (DISABLED)",
   "guidebook.role.title.kinswathe:kidnapper": "Dark Dealings",

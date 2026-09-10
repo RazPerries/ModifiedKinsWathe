@@ -33,8 +33,8 @@ public class ConfigWorldComponent implements AutoSyncedComponent, ServerTickingC
     //关于KinsWathe修改
     public boolean BodymakerAbilityFakeRole = true;
     public int CookPanPrice = 250;
-    public int DrugmakerPoisonInjectorPrice = 100;
-    public int DrugmakerBlowgunPrice = 250;
+    public int DrugmakerPoisonInjectorPrice = 80;
+    public int DrugmakerBlowgunPrice = 180;
     public int HackerHackingTime = GameConstants.getInTicks(0,30) / 20;
     public boolean HackerHasShop = true;
     public int HackerRefreshWeaponCooldownPrice = 300;
