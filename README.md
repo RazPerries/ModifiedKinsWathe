@@ -174,12 +174,7 @@
 - Taskmaster
   - Only generates on roles with task income
   - Killer roles receive 50 coins after completing tasks
-  - Non-killer roles receive an additional 25 income after completing tasks
-
-- Violator
-  - Disabled by default
-  - Can jump when in game
-
+  - Non-killer roles receive an additional 25 income after completing tasksl
 
 ## Config Settings
 

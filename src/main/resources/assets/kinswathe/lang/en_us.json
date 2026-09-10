@@ -2,7 +2,7 @@
   "key.kinswathe.ability": "Ability",
   "tip.kinswathe.cooldown": "Ability usable in %ss",
   "tip.kinswathe.ability.can_use": "Use %s to activate ability",
-  "tip.kinswathe.ability.not_enough_money": "%s§f\uE781§r required to activate ability",
+  "tip.kinswathe.ability.not_enough_money": "You require %s§f\uE781§r to use this ability.",
 
   "tip.kinswathe.game_safe_time": "Remaining safe time: %ss",
   "tip.kinswathe.game_no_safe_time": "Safe time has been exhausted!",

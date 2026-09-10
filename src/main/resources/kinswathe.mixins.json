@@ -33,6 +33,7 @@
     "roles.kidnapper.KidnapperShopMixin",
     "roles.physician.PhysicianShopMixin",
     "roles.robot.RobotNoPoisonMixin",
+    "roles.robot.RobotStaminaRecoveryMixin",
     "roles.technician.TechnicianShopMixin"
   ],
   "injectors": {

@@ -10,6 +10,7 @@ import org.BsXinQin.kinswathe.roles.hacker.HackerComponent;
 import org.BsXinQin.kinswathe.roles.hacker.HackerPhoneComponent;
 import org.BsXinQin.kinswathe.roles.hunter.HunterComponent;
 import org.BsXinQin.kinswathe.roles.kidnapper.KidnapperComponent;
+import org.BsXinQin.kinswathe.roles.robot.RobotComponent;
 import org.BsXinQin.kinswathe.roles.technician.TechnicianComponent;
 import org.jetbrains.annotations.NotNull;
 import org.ladysnake.cca.api.v3.entity.EntityComponentFactoryRegistry;
@@ -17,6 +18,8 @@ import org.ladysnake.cca.api.v3.entity.EntityComponentInitializer;
 import org.ladysnake.cca.api.v3.entity.RespawnCopyStrategy;
 import org.ladysnake.cca.api.v3.world.WorldComponentFactoryRegistry;
 import org.ladysnake.cca.api.v3.world.WorldComponentInitializer;
+
+import java.awt.*;
 
 public class KinsWatheComponents implements EntityComponentInitializer, WorldComponentInitializer {
 
@@ -33,6 +36,7 @@ public class KinsWatheComponents implements EntityComponentInitializer, WorldCom
         registry.beginRegistration(PlayerEntity.class, HunterComponent.KEY).respawnStrategy(RespawnCopyStrategy.NEVER_COPY).end(HunterComponent::new);
         registry.beginRegistration(PlayerEntity.class, KidnapperComponent.KEY).respawnStrategy(RespawnCopyStrategy.NEVER_COPY).end(KidnapperComponent::new);
         registry.beginRegistration(PlayerEntity.class, TechnicianComponent.KEY).respawnStrategy(RespawnCopyStrategy.NEVER_COPY).end(TechnicianComponent::new);
+        registry.beginRegistration(PlayerEntity.class, RobotComponent.KEY).respawnStrategy(RespawnCopyStrategy.NEVER_COPY).end(RobotComponent::new);
     }
 
     @Override
