@@ -21,16 +21,16 @@ public class KinsWatheConfig {
     public boolean EnableJumpNotInGame = false;
 
     @SerialEntry(comment = "Whether to enable safe time when game starts.")
-    public boolean EnableStartSafeTime = false;
+    public boolean EnableStartSafeTime = true;
 
     @SerialEntry(comment = "Whether to enable auto join voice chat group for spectators.")
     public boolean EnableAutoJoinVoiceChat = true;
 
     @SerialEntry(comment = "Whether to enable better Blackout visual effect.")
-    public boolean EnableBetterBlackout = true;
+    public boolean EnableBetterBlackout = false;
 
     @SerialEntry(comment = "Whether to enable instinct when in Psycho Mode.")
-    public boolean EnableAutoPsychoInstinct = true;
+    public boolean EnableAutoPsychoInstinct = false;
 
     @SerialEntry(comment = "Whether to enable neutral roles announcement when game ends.")
     public boolean EnableNeutralAnnouncement = true;
@@ -59,7 +59,7 @@ public class KinsWatheConfig {
     public boolean BodymakerAbilityFakeRole = true;
 
     @SerialEntry(comment = "Cook: modify price of Pan.")
-    public int CookPanPrice = 250;
+    public int CookPanPrice = 150;
 
     @SerialEntry(comment = "Dreamer: modify initial quantity of Dream Imprint.")
     public int DreamerInitialItemQuantity = 1;
@@ -94,12 +94,12 @@ public class KinsWatheConfig {
     public int HunterAbilityCooldown = GameConstants.getInTicks(0,5) / 20;
 
     @SerialEntry(comment = "Kidnapper: modify price of Knockout Drug and get additional coins when kill dazed player.")
-    public int KidnapperKnockoutDrugPrice = 75;
+    public int KidnapperKnockoutDrugPrice = 150;
     @SerialEntry
     public int KidnapperGetAdditionalCoins = 100;
 
     @SerialEntry(comment = "Physician: modify price of Pill.")
-    public int PhysicianPillPrice = 300;
+    public int PhysicianPillPrice = 150;
 
     @SerialEntry(comment = "Robot: modify duration and cooldown of ability.")
     public int RobotAbilityDuration = GameConstants.getInTicks(0,10) / 20;

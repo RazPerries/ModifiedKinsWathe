@@ -68,7 +68,7 @@
   "announcement.modifier.kinswathe.taskmaster": "Taskmaster",
 
   "item.kinswathe.blowgun": "Blowgun",
-  "item.kinswathe.blowgun.tooltip": "Point, right-click and shoot\nTarget that be shooted will be poisoned\n1 minute cooldown",
+  "item.kinswathe.blowgun.tooltip": "Works identically to the revolver but quieter\nPoint and shoot at a target to poison them\n50s cooldown, one-time use",
 
   "item.kinswathe.capture_device": "Capture Device",
   "item.kinswathe.capture_device.tooltip": "Right-click to place down on floors\nTrap passing player and inform the user\nCapture Device will automatically disappear after a period of time\nInvisible to other players, both placed and in hand\n1 minute cooldown",
@@ -77,16 +77,16 @@
   "item.kinswathe.dream_imprint.tooltip": "Use on a player to protect one extra hit of life\nTarget will teleport to user if it dies and give a delusion count\nSingle use",
 
   "item.kinswathe.hunting_knife": "Hunting Knife",
-  "item.kinswathe.hunting_knife.tooltip": "Right-click, hold for a second and get close to your victim\nCompared to Knife, it has a longer holding-time\nIf stop holding after sprinting, two times holding-time cooldown\nAfter a kill, cannot be used for 45 seconds\nAttack to knock back / push a player (no cooldown)",
+  "item.kinswathe.hunting_knife.tooltip": "A variation of the knife\nHas a longer holding-time compared to the knife\nIf stop holding after sprinting, two times holding-time cooldown\n40s cooldown\nAttack to knock back / push a player (no cooldown)",
 
   "item.kinswathe.knockout_drug": "Knockout Drug",
-  "item.kinswathe.knockout_drug.tooltip": "Use on a player to daze it for 20 seconds\nThe affected player will follow you\nUse sneaking key to release it\nSingle use, 45 seconds cooldown",
+  "item.kinswathe.knockout_drug.tooltip": "Right-click on a player to daze them for 8s\nDazed players cannot do anything and is forced to follow you\nSneak to release your player early\n60 seconds cooldown, one-time use",
 
   "item.kinswathe.medical_kit": "Medical Kit",
   "item.kinswathe.medical_kit.tooltip": "Used to remove poison on players\nSneak + right-click to use on yourself\nIs used regardless of the player's poison status\n60s cooldown, unlimited uses",
 
   "item.kinswathe.pan": "Pan",
-  "item.kinswathe.pan.tooltip": "Mechanically similar to the knife.\nHit another player to stun them for 5s\nProtects you from one bullet if held out\n45 seconds cooldown, one-time use if used for either purpose",
+  "item.kinswathe.pan.tooltip": "Mechanically similar to the knife.\nHit another player to stun them for 5s\nProtects you from one bullet if held out\n50s cooldown, one-time use if used for either purpose",
 
   "item.kinswathe.phone": "Phone",
   "item.kinswathe.phone.tooltip": "Right-click to switch between Free-Voice-Group and Killer-Voice-Group",
@@ -95,7 +95,7 @@
   "item.kinswathe.pill.tooltip": "Used to remove poison on players\nSneak + right-click to use on yourself\nIs used regardless of the player's poison status\n60s cooldown, one-time use",
 
   "item.kinswathe.poison_injector": "Poison Injector",
-  "item.kinswathe.poison_injector.tooltip": "Use on a player to poison it\nIf target have been poisoned, directly cause death\n1 minute cooldown",
+  "item.kinswathe.poison_injector.tooltip": "Right-click on a player to poison them. Is silent when applied\nKills the player instead if they're already poisoned\n50s cooldown, one-time use",
 
   "item.kinswathe.sulfuric_acid_barrel": "Sulfuric Acid Barrel",
   "item.kinswathe.sulfuric_acid_barrel.tooltip": "Use on a dead body to dissolve it\n1 minute cooldown",
@@ -124,7 +124,7 @@
 
   "guidebook.role.kinswathe:cook": "Cook",
   "guidebook.role.title.kinswathe:cook": "PAN PAN PAN",
-  "guidebook.role.description.kinswathe:cook": "An expert in foods and cuisine.\n\n - Spawns with 2 food items at the start of the round.\n\n - Can buy food from the shop for 75 coins and a Pan for 250 coins.\n\nPan Item (250 coins):\n\n - Holding down right-click for 1s and releasing on another player stuns them for 5s.\n\n - If you hold out the pan and get shot at, it will save you for that bullet.\n\n - If used for either purpose, then the pan will be broken and removed from your inventory.\n\n - Has a cooldown of 45s when used to bash someone's head.",
+  "guidebook.role.description.kinswathe:cook": "An expert in foods and cuisine.\n\n - Spawns with 2 food items at the start of the round.\n\n - Can buy food from the shop for 75 coins and a Pan for 250 coins.\n\nPan Item (150 coins):\n\n - Holding down right-click for 1s and releasing on another player stuns them for 5s.\n\n - If you hold out the pan and get shot at, it will save you for that bullet.\n\n - If used for either purpose, then the pan will be broken and removed from your inventory.\n\n - Has a cooldown of 45s when used to bash someone's head.",
 
   "guidebook.role.kinswathe:dreamer": "Dreamer (DISABLED)",
   "guidebook.role.title.kinswathe:dreamer": "Forever Disabled",
@@ -156,7 +156,7 @@
 
   "guidebook.role.kinswathe:technician": "Technician (DISABLED)",
   "guidebook.role.title.kinswathe:technician": "TBD",
-  "guidebook.role.description.kinswathe:technician": "A very interesting and OP role. However, it becomes boring if stripped of it's OPness. Needs to be reworked with considerations.",
+  "guidebook.role.description.kinswathe:technician": "A very interesting and OP role. However, it becomes boring if stripped of it's OPness. Needs to be reworked with major considerations.",
 
   "guidebook.role.kinswathe:magnate": "Magnate (DISABLED)",
   "guidebook.role.title.kinswathe:magnate": "Why",
