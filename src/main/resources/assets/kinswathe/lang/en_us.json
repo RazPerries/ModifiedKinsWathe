@@ -77,7 +77,7 @@
   "item.kinswathe.dream_imprint.tooltip": "Use on a player to protect one extra hit of life\nTarget will teleport to user if it dies and give a delusion count\nSingle use",
 
   "item.kinswathe.hunting_knife": "Hunting Knife",
-  "item.kinswathe.hunting_knife.tooltip": "A variation of the knife\nHas a longer holding-time compared to the knife\nIf stop holding after sprinting, two times holding-time cooldown\n40s cooldown\nAttack to knock back / push a player (no cooldown)",
+  "item.kinswathe.hunting_knife.tooltip": "A variation of the knife but with a longer holding-time (holding right-click, 10s)\nGoes on cooldown if you sprint while holding down (cooldown time is based on sprinting time)\n40s cooldown, attack to knock back a player (no cooldown)",
 
   "item.kinswathe.knockout_drug": "Knockout Drug",
   "item.kinswathe.knockout_drug.tooltip": "Right-click on a player to daze them for 8s\nDazed players cannot do anything and is forced to follow you\nSneak to release your player early\n60 seconds cooldown, one-time use",
@@ -124,7 +124,7 @@
 
   "guidebook.role.kinswathe:cook": "Cook",
   "guidebook.role.title.kinswathe:cook": "PAN PAN PAN",
-  "guidebook.role.description.kinswathe:cook": "An expert in foods and cuisine.\n\n - Spawns with 2 food items at the start of the round.\n\n - Can buy food from the shop for 75 coins and a Pan for 250 coins.\n\nPan Item (150 coins):\n\n - Holding down right-click for 1s and releasing on another player stuns them for 5s.\n\n - If you hold out the pan and get shot at, it will save you for that bullet.\n\n - If used for either purpose, then the pan will be broken and removed from your inventory.\n\n - Has a cooldown of 45s when used to bash someone's head.",
+  "guidebook.role.description.kinswathe:cook": "An expert in foods and cuisine.\n\n - Spawns with 2 food items at the start of the round.\n\n - Can buy food from the shop for 75 coins and a Pan for 250 coins.\n\nPan Item (150 coins):\n\n - Holding down right-click for 1s and releasing on another player stuns them for 5s.\n\n - If you hold out the pan and get shot at, it will save you for that bullet.\n\n - If used for either purpose, then the pan will be broken and removed from your inventory.\n\n - Has a cooldown of 50s when used to bash someone's head.",
 
   "guidebook.role.kinswathe:dreamer": "Dreamer (DISABLED)",
   "guidebook.role.title.kinswathe:dreamer": "Forever Disabled",
@@ -148,7 +148,7 @@
 
   "guidebook.role.kinswathe:physician": "Physician",
   "guidebook.role.title.kinswathe:physician": "MEDIC HELLLPP",
-  "guidebook.role.description.kinswathe:physician": "An expert in poison cleansing.\n\n - Starts with Pill and can buy Pills in their Shop for 150 coins.\n\n - Pills can be self-used on the Physician, so make sure to take them out before attempting mass poison!",
+  "guidebook.role.description.kinswathe:physician": "An expert in poison cleansing.\n\n - Starts with Pill\n\n - Can buy Pills in their Shop for 150 coins.\n\nPill Item (150 coins):\n\n - Cures poison on a player.\n\nNOTE: Pills can be self-used on the Physician, so make sure to take them out before attempting mass poison!",
 
   "guidebook.role.kinswathe:robot": "Robot",
   "guidebook.role.title.kinswathe:robot": "Clanker",
