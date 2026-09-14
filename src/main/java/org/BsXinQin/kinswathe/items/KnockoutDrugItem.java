@@ -1,17 +1,14 @@
 package org.BsXinQin.kinswathe.items;
 
-import dev.doctor4t.wathe.cca.GameWorldComponent;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import org.BsXinQin.kinswathe.KinsWatheItems;
-import org.BsXinQin.kinswathe.KinsWatheRoles;
 import org.BsXinQin.kinswathe.roles.kidnapper.KidnapperComponent;
 import org.jetbrains.annotations.NotNull;
 
