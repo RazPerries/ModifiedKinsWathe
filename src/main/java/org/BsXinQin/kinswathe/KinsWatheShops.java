@@ -100,7 +100,8 @@ public class KinsWatheShops {
         return Util.make(new ArrayList<>(), (entries) -> {
             entries.addAll(GameConstants.SHOP_ENTRIES);
             entries.removeFirst();
-            entries.addFirst(new ShopEntry(KinsWatheItems.HUNTING_KNIFE.getDefaultStack(), getItemPrice("KNIFE", 75), ShopEntry.Type.WEAPON));
+            entries.removeFirst();
+            entries.addFirst(new ShopEntry(KinsWatheItems.HUNTING_KNIFE.getDefaultStack(), getItemPrice("HUNTING_KNIFE", 75), ShopEntry.Type.WEAPON));
         });
     }
     //绑匪商店

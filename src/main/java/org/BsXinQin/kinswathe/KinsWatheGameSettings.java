@@ -155,7 +155,7 @@ public class KinsWatheGameSettings {
                 return identifier == GameConstants.DeathReasons.FELL_OUT_OF_TRAIN;
             }
             //厨师死亡事件
-            if (player.getMainHandStack().isOf(KinsWatheItems.PAN) && player.isUsingItem() && player.getActiveItem().getItem().getUseAction(player.getActiveItem()) == UseAction.SPEAR) {
+            if (player.getMainHandStack().isOf(KinsWatheItems.PAN)) {
                 if (identifier == GameConstants.DeathReasons.GUN) {
                     KinsWatheItems.setItemAfterUsing(player, KinsWatheItems.PAN, Hand.MAIN_HAND);
                     player.playSound(SoundEvents.ENTITY_ITEM_BREAK, 1.0f, 1.0f);

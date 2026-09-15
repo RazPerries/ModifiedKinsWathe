@@ -2,6 +2,7 @@ package org.BsXinQin.kinswathe.client.mixin.gui;
 
 import dev.doctor4t.wathe.api.Role;
 import dev.doctor4t.wathe.cca.GameWorldComponent;
+import dev.doctor4t.wathe.cca.PlayerStaminaComponent;
 import dev.doctor4t.wathe.client.WatheClient;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -31,7 +32,8 @@ public abstract class StaminaBarMixin {
             if (gameWorld.getGameStatus() == GameWorldComponent.GameStatus.ACTIVE) {
                 Role role = gameWorld.getRole(MinecraftClient.getInstance().player);
                 if (KinsWatheConfig.HANDLER.instance().EnableStaminaBar && !MinecraftClient.getInstance().options.hudHidden && role != null) {
-                    int maxSprintTime = role.getMaxSprintTime();
+                    PlayerStaminaComponent playerStaminaComponent = PlayerStaminaComponent.KEY.get(MinecraftClient.getInstance().player);
+                    float maxSprintTime = role.getMaxSprintTime() + playerStaminaComponent.getAdditionalStamina();
                     if (maxSprintTime == -1) {
                         getStaminaBarInfinite(context);
                     } else {
